@@ -1,0 +1,176 @@
+[
+    {
+        "stimulus": "audio/foil4_capev6_noise-3snr.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Addvox_GBF_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Addvox_GBF_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Addvox_GBF_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Addvox_GBF_2.wav"
+    }, 
+    {
+        "stimulus": "audio/foil2_capev6_nn.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Addvox_GBF_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Addvox_GBF_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Sonivox_MAX_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Boomvox_GBF_2.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Voicebuddy_MAX_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NoDevice_ND_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Voicebuddy_MAX_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Boomvox_GBF_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Sonivox_MAX_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Boomvox_GBF_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Voicebuddy_MAX_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NoDevice_ND_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NoDevice_ND_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Sonivox_MAX_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Boomvox_GBF_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NoDevice_ND_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Voicebuddy_MAX_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NoDevice_ND_2.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Sonivox_MAX_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Sonivox_MAX_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Boomvox_GBF_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Voicebuddy_MAX_2.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Voicebuddy_MAX_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NoDevice_ND_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Boomvox_GBF_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Sonivox_MAX_2.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Minibuddy_GBF_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Spokeman_MAX_2.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Spokeman_MAX_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Minibuddy_GBF_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Minibuddy_GBF_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Spokeman_MAX_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Minibuddy_GBF_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Spokeman_MAX_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Minibuddy_GBF_2.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Spokeman_MAX_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Spokeman_MAX_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Minibuddy_GBF_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Chattervox_GBF_2.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NadyWA120BT_MAX_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NadyWA120BT_MAX_7.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Chattervox_GBF_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Chattervox_GBF_1.wav"
+    }, 
+    {
+        "stimulus": "audio/foil1_capev1_nn.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NadyWA120BT_MAX_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Chattervox_GBF_4.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NadyWA120BT_MAX_1.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NadyWA120BT_MAX_3.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Chattervox_GBF_7.wav"
+    }, 
+    {
+        "stimulus": "audio/foil3_capev1_noise-3snr.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_Chattervox_GBF_6.wav"
+    }, 
+    {
+        "stimulus": "audio/KAmp_NadyWA120BT_MAX_2.wav"
+    }
+]

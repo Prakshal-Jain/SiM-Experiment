@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Thanks</title>
+        <meta charset="UTF-8" />
+    </head>
+
+    <script>
+    function getRandom(length) {
+      return Math.floor(Math.pow(10, length-1) + Math.random() * 9 * Math.pow(10, length-1));
+    }
+    </script>
+
+    <script>
+    function showRandomNumber(){
+      document.getElementById("myNumber").innerHTML = getRandom(10);
+    }
+    </script>
+
+
+    <body>
+        <h1 align=center>Thank you!</h1>
+        <hr />
+        <h3>
+            Thank you for participating in this study. Your result will help us understand how listeners perceive differences between speech amplification devices that may be used by people who have difficulty communicating. If there is anything about the study or your participation that is unclear or that you do not understand, or if you have other questions or wish to report a research-related problem, you may contact our lab at: <a href="mailto:casa.lab.ub@gmail.com">casa.lab.ub@gmail.com</a>
+        </h3>
+        <br>
+        <h3>If you are a Prolific participant:</h3>
+        <body>Please click the link below so that Prolific will record your submission. If a completion code is needed, please enter 5AF387F1.</body>
+        <h3><a href="https://app.prolific.co/submissions/complete?cc=5AF387F1">https://app.prolific.co/submissions/complete?cc=5AF387F1</a></h3>
+        <br>
+
+        <h3> If you are a student participant, your unique study completion code is:</h3>
+          <body onload="showRandomNumber();">
+            <h3><div id="myNumber"></div></h3>
+          </body>
+
+    </body>
+
+</html>
