@@ -314,7 +314,7 @@ timeline.push(fullscreen_trial);
 var instruction = {
     type: 'instructions',
     pages: [
-        'Welcome to the experiment. Please listen to the speech presented to you in the following task. You will be asked to provide ratings of <br> 1) how <strong>UNDERSTANDABLE</strong> the speech is to you and <br> 2) how much <strong>EFFORT</strong> it takes to understand the speech.<br><br> To do this, you will be asked to indicate your judgment using a sliding scale with anchors. You are encouraged to use as much of the scale as you feel is appropriate.<br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
+        'Welcome to the experiment. Please listen to the speech presented to you in the following task. You will be asked to provide ratings of <br> 1) the <strong>SOUND QUALITY</strong> of the speech and <br> 2) the <strong>CLARITY</strong> of the speech.<br><br> To do this, you will be asked to indicate your judgment using a sliding scale with anchors. You are encouraged to use as much of the scale as you feel is appropriate.<br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
         'For each new utterance, please provide your rating after it finishes playing. <br> While you do have the option to replay each sentence, we ask that you <strong>DO NOT PRESS REPLAY</strong> unless something happens that has made it difficult for you to hear the item (for example, if there is a loud, unexpected sound in your environment).',
         "The experiment is self-paced. Please complete it in one sitting. It is expected to take approximately thirty minutes. Click 'Continue' to start the experiment."
     ],
@@ -381,12 +381,12 @@ timeline.push(instruction);
 /* Set up number of sliders, and labels, prompt, and name (to be reported in results) for each slider.
 Number of sliders and number of slider names must match. */
 var scount = 2;
-var slabels = [['Cannot understand anything', 'Can understand everything'], ['No effort required', 'Maximal effort required']];
-var sprompts = ['how UNDERSTANDABLE the speech is', 'how much EFFORT is required to understand the speech'];
-var snames = ['Understandability', 'Effort'];
+var slabels = [['Poor sound quality', 'Excellent sound quality'], ['Poor speech clarity', 'Excellent speech clarity']];
+var sprompts = ['the QUALITY of the speech audio', 'the CLARITY of the speech'];
+var snames = ['Quality', 'Clarity'];
 
 if (isPilot == "true") {
-  length = 5;
+  length = 2;
 } else {
   length = stimuli_list.length;
 }
