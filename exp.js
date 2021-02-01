@@ -1,7 +1,7 @@
 /* Experiment */
 
 // TOGGLE PILOT OPTIONS
-var isPilot = "true"
+var isPilot = "false"
 
 // if (isPilot == "true") {
 //
