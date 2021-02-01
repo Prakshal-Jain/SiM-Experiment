@@ -28,7 +28,7 @@ if (checkiPad == "iPad" || String(browser.tablet) !== "undefined" || String(brow
 /* Get stimuli from stimuli.json created by files_to_json.py */
 var stimuli_list = [];
 $.ajax({
-    url: "./stimuli.json",
+    url: "stimuli.json",
     async: false,
     dataType: 'json',
     success: function (data) {
