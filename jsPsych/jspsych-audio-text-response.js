@@ -91,11 +91,9 @@ jsPsych.plugins['audio-text-response'] = (function() {
       button_label: {
         type: jsPsych.plugins.parameterType.STRING,
         pretty_name: 'Button label',
-        array: false,
         default:  'Continue',
         description: 'The text that appears on the button to finish the trial.'
       },
-
     }
   }
 
@@ -175,8 +173,14 @@ jsPsych.plugins['audio-text-response'] = (function() {
       html += '&nbsp';
       html += '&nbsp';
     };
-    html += '<button id="jspsych-audio-sliders-response-next" class="jspsych-btn" disabled >' + trial.button_label + '</button>';
+    // html += '<button id="jspsych-audio-sliders-response-next" class="jspsych-btn" disabled >' + trial.button_label + '</button>';
     display_element.innerHTML = html;
+
+    // add submit button
+    if(trial.display_button){
+        html += '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
+    }
+
 
 
     var response = {
@@ -188,7 +192,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
     if (trial.replay == true) {
       display_element.querySelector('#jspsych-audio-text-response-replay').addEventListener('click', function () {
         display_element.querySelector('#jspsych-audio-text-response-replay').disabled = true;
-        // display_element.querySelector('#jspsych-audio-text-response-next').disabled = true;
+        display_element.querySelector('#jspsych-audio-text-response-next').disabled = true;
         if (context !== null) {
           source = context.createBufferSource();
           source.buffer = jsPsych.pluginAPI.getAudioBuffer(trial.stimulus);
@@ -289,7 +293,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
       if (trial.replay == true) {
         display_element.querySelector('#jspsych-audio-text-response-replay').disabled = true;
       }
-      // display_element.querySelector('#jspsych-audio-text-response-next').disabled = true;
+      display_element.querySelector('#jspsych-audio-text-response-next').disabled = true;
       if (context !== null) {
         startTime = context.currentTime;
         source.start(startTime);
