@@ -462,7 +462,6 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                 prompt: ""
             };
             timeline.push(text_response);
-            timeline.push(trial);
         }
 
     }
