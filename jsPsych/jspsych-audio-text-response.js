@@ -88,12 +88,6 @@ jsPsych.plugins['audio-text-response'] = (function() {
         default: true,
         description: 'Display the button or not'
       },
-      button_label: {
-        type: jsPsych.plugins.parameterType.STRING,
-        pretty_name: 'Button label',
-        default:  'Continue',
-        description: 'The text that appears on the button to finish the trial.'
-      },
 
     }
   }
