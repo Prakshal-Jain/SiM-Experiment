@@ -19,6 +19,12 @@ jsPsych.plugins['audio-text-response'] = (function() {
         default: null,
         description: 'How long to show the trial.'
       },
+      replay: {
+        type: jsPsych.plugins.parameterType.BOOL,
+        pretty_name: 'Replay',
+        default: true,
+        description: 'If true, the participant will be able to replay.'
+      },
       questions: {
         type: jsPsych.plugins.parameterType.COMPLEX,
         array: true,
