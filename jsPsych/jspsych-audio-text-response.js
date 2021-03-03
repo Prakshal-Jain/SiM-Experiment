@@ -159,14 +159,6 @@ jsPsych.plugins['audio-text-response'] = (function() {
       html += '</div>';
     }
 
-    // // add submit button
-    // if(trial.display_button){
-    //     html += '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
-    // }
-
-    html += '</form>'
-    display_element.innerHTML = html;
-
     var replay_time = 0;
     if (trial.replay == true) {
       html += '<button id="jspsych-audio-text-response-replay" class="jspsych-btn">' + '&nbsp' + '&nbsp' + 'Replay' + '&nbsp' + '&nbsp' + '</button>';
@@ -176,9 +168,10 @@ jsPsych.plugins['audio-text-response'] = (function() {
       html += '&nbsp';
       html += '&nbsp';
     };
-    html += '<button id="jspsych-survey-text-next" class="jspsych-btn">' + trial.button_label + '</button>';
+    html += '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
+    
+    html += '</form>'
     display_element.innerHTML = html;
-
 
     var response = {
         rt: null,
