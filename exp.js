@@ -314,7 +314,7 @@ timeline.push(fullscreen_trial);
 var instruction = {
     type: 'instructions',
     pages: [
-        'Welcome to the experiment. Please listen to the speech presented to you in the following task. You will be asked to provide ratings of <br> 1) the <strong>SOUND QUALITY</strong> of the speech: When rating the sound quality, pay attention to how the voice sounds overall to you rather than simply how much of the speech you can understand. <br> 2) the <strong>LOUDNESS</strong> of the speech: When rating the loudness, pay attention to how loud, strong, or forceful the sound is. <br><br> You will be asked to indicate your judgment using a sliding scale with anchors. You are encouraged to use as much of the scale as you feel is appropriate.<br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
+        'Welcome to the experiment. Please listen to the speech presented to you in the following task. You will be asked to provide ratings of <br> 1) the <strong>SOUND QUALITY</strong> of the speech: When rating the sound quality, pay attention to how the voice sounds overall to you rather than simply how much of the speech you can understand. <br> 2) the <strong>Transcription</strong> of the speech: When entering the transcription of what you heard in the audio, pay attention to how loud, strong, or forceful the sound is. <br><br> You will be asked to indicate your judgment using a sliding scale with anchors (for the <strong>SOUND QUALITY</strong>) and text input for the <strong>Transcription</strong>. You are encouraged to use as much of the scale as you feel is appropriate and re-input the text.<br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
         'For each new utterance, please provide your rating after it finishes playing. <br> While you do have the option to replay each sentence, we ask that you <strong>DO NOT PRESS REPLAY</strong> unless something happens that has made it difficult for you to hear the item (for example, if there is a loud, unexpected sound in your environment).',
         "The experiment is self-paced. Please complete it in one sitting. It is expected to take approximately thirty minutes. Click 'Continue' to start the experiment."
     ],
@@ -382,8 +382,8 @@ timeline.push(instruction);
 Number of sliders and number of slider names must match. */
 var scount = 2;
 var slabels = [['Very easy to understand', 'Very difficult to understand']];
-var sprompts = ['the QUALITY of the speech audio', 'the Effort required to understand the speech'];
-var snames = ['Quality', 'Effort'];
+var sprompts = ['the speech and transcribe what you hear', 'the Effort required to understand the speech'];
+var snames = ['Transcription', 'Effort'];
 
 if (isPilot == "true") {
   length = 2;
