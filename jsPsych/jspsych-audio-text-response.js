@@ -25,6 +25,12 @@ jsPsych.plugins['audio-text-response'] = (function() {
         default: true,
         description: 'If true, the participant will be able to replay.'
       },
+      autoplay: {
+        type: jsPsych.plugins.parameterType.BOOL,
+        pretty_name: 'Autoplay',
+        default: true,
+        description: 'If true, the audio will autoplay.'
+      },
       questions: {
         type: jsPsych.plugins.parameterType.COMPLEX,
         array: true,
