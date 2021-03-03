@@ -286,18 +286,18 @@ jsPsych.plugins['audio-text-response'] = (function() {
     // start audio
     if (trial.autoplay == true && context !== null) {
       if (trial.replay == true) {
-        display_element.querySelector('#jspsych-audio-sliders-response-replay').disabled = true;
+        display_element.querySelector('#jspsych-audio-text-response-replay').disabled = true;
       }
-      //display_element.querySelector('#jspsych-audio-sliders-response-next').disabled = true;
+      //display_element.querySelector('#jspsych-audio-text-response-next').disabled = true;
       if (context !== null) {
         startTime = context.currentTime;
         source.start(startTime);
         source.onended = function () {
           if (trial.replay == true) {
-            display_element.querySelector('#jspsych-audio-sliders-response-replay').disabled = false;
+            display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
           }
           if (movements.includes(true) == false) {
-            display_element.querySelector('#jspsych-audio-sliders-response-next').disabled = false;
+            display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
           }
 
         }
@@ -306,10 +306,10 @@ jsPsych.plugins['audio-text-response'] = (function() {
         audio.play();
         audio.addEventListener('ended', function () {
           if (trial.replay == true) {
-            display_element.querySelector('#jspsych-audio-sliders-response-replay').disabled = false;
+            display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
           }
           if (movements.includes(true) == false) {
-            display_element.querySelector('#jspsych-audio-sliders-response-next').disabled = false;
+            display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
           }
         })
       }
@@ -318,7 +318,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
         startTime = context.currentTime;
       }
       if (movements.includes(true) == false) {
-        display_element.querySelector('#jspsych-audio-sliders-response-next').disabled = false;
+        display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
       }
     }
 
