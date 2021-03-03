@@ -88,6 +88,12 @@ jsPsych.plugins['audio-text-response'] = (function() {
         default: true,
         description: 'Display the button or not'
       },
+      button_label: {
+        type: jsPsych.plugins.parameterType.STRING,
+        pretty_name: 'Button label',
+        default:  'Continue',
+        description: 'The text that appears on the button to finish the trial.'
+      },
 
     }
   }
@@ -151,10 +157,10 @@ jsPsych.plugins['audio-text-response'] = (function() {
       html += '</div>';
     }
 
-    // add submit button
-    if(trial.display_button){
-        html += '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
-    }
+    // // add submit button
+    // if(trial.display_button){
+    //     html += '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
+    // }
 
     html += '</form>'
     display_element.innerHTML = html;
