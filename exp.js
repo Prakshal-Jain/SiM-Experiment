@@ -411,7 +411,8 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                 replay: true,
                 autoplay: true,
                 labels: slabels[0],
-                slider_width: 0,
+                slider_width: 500,
+                slider_name: snames[n],
                 prompt: snames[n],
             };
 
