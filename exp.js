@@ -450,19 +450,12 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                         }, 
                     ],
                 preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
-                // slider_name: snames[n],
+                on_load: function() {
+                    console.log('The trial just finished loading.');
+                },
                 on_finish: function (data) {
                     data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
                 }
-            };
-            var trial = {
-                type: 'audio-button-response',
-                  on_load: function() {
-                        console.log('The trial just finished loading.');
-                    },
-                stimulus: stimuli_list[i].stimulus,
-                choices: ['Low', 'High'],
-                prompt: ""
             };
             timeline.push(text_response);
         }
