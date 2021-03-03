@@ -434,27 +434,27 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
         }
         // For Odd counts (Transcription), we display survey-text.
         else if(n % 2 == 0){
-            // var text_response = {
-            //     type: 'survey-text',
-            //     replay: true,
-            //     autoplay: true,
-            //     //require_movement: true,
-            //       questions: [
-            //             {
-            //                 prompt: "", 
-            //                 name: snames[n],
-            //                 placeholder: "Transcribe the audio file here",
-            //                 required: true,
-            //                 rows: 5, 
-            //                 columns: 40
-            //             }, 
-            //         ],
-            //     preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
-            //     // slider_name: snames[n],
-            //     on_finish: function (data) {
-            //         data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
-            //     }
-            // };
+            var text_response = {
+                type: 'survey-text',
+                replay: true,
+                autoplay: true,
+                //require_movement: true,
+                  questions: [
+                        {
+                            prompt: "", 
+                            name: snames[n],
+                            placeholder: "Transcribe the audio file here",
+                            required: true,
+                            rows: 5, 
+                            columns: 40
+                        }, 
+                    ],
+                preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
+                // slider_name: snames[n],
+                on_finish: function (data) {
+                    data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                }
+            };
 
             // Psudo Audio-Slider to add audio to the page
             var trial = {
