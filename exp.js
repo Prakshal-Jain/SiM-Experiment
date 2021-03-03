@@ -435,21 +435,13 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
         // For Odd counts (Transcription), we display survey-text.
         else if(n % 2 == 0){
             // Psudo Audio-Slider to add audio to the page
-            var audio_trial = {
-                type: 'audio-slider-response',
+            var trial = {
+                type: 'audio-button-response',
                 stimulus: stimuli_list[i].stimulus,
-                replay: true,
-                autoplay: true,
-                //require_movement: true,
-                labels: slabels[0],
-                slider_width: 500,
-                prompt: snames[n],
-                preamble: '<p>Random Testing Going on</p>',
-                slider_name: snames[n],
-                on_finish: function (data) {
-                    data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
-                }
+                choices: ['Low', 'High'],
+                prompt: "<p>Is the pitch high or low?</p>"
             };
+
             var text_response = {
                 type: 'survey-text',
                 replay: true,
