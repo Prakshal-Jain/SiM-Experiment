@@ -92,7 +92,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
     display_button: {
         type: jsPsych.plugins.parameterType.BOOL,
         pretty_name: 'Button',
-        default: false,
+        default: true,
         description: 'Display the button or not'
       },
       button_label: {
