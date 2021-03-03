@@ -440,10 +440,15 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                 stimulus: stimuli_list[i].stimulus,
                 replay: true,
                 autoplay: true,
+                //require_movement: true,
                 labels: slabels[0],
                 slider_width: 500,
-                slider_name: snames[n],
                 prompt: snames[n],
+                preamble: '<p>Random Testing Going on</p>',
+                slider_name: snames[n],
+                on_finish: function (data) {
+                    data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                }
             };
             var text_response = {
                 type: 'survey-text',
