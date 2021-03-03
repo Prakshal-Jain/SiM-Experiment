@@ -455,15 +455,14 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                     data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
                 }
             };
-            timeline.push(text_response);
             var trial = {
                 type: 'audio-button-response',
                 stimulus: stimuli_list[i].stimulus,
                 choices: ['Low', 'High'],
                 prompt: ""
             };
+            timeline.push(text_response);
             timeline.push(trial);
-            timeline.pop();
         }
 
     }
