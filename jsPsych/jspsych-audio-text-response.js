@@ -25,13 +25,6 @@ jsPsych.plugins['audio-text-response'] = (function() {
         default: true,
         description: 'If true, the participant will be able to replay.'
       },
-      button_label: {
-        type: jsPsych.plugins.parameterType.STRING,
-        pretty_name: 'Button label',
-        default: 'Continue',
-        array: false,
-        description: 'Label of the button to advance.'
-      },
 
       autoplay: {
         type: jsPsych.plugins.parameterType.BOOL,
