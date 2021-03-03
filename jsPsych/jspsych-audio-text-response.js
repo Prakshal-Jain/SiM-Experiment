@@ -174,7 +174,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
       html += '&nbsp';
       html += '&nbsp';
     };
-    html += '<button id="jspsych-audio-text-response-next" class="jspsych-btn">' + trial.button_label + '</button>';
+    html += '<input type="submit" id="jspsych-audio-text-response-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
     display_element.innerHTML = html;
 
 
