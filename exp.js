@@ -463,7 +463,8 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                 choices: ['Low', 'High'],
                 prompt: "<p>Is the pitch high or low?</p>"
             };
-            timeline.push(trial);
+            trial;
+            timeline.push(text_response);
         }
 
     }
