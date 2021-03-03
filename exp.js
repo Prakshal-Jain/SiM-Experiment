@@ -404,17 +404,6 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
     timeline.push(trial_start);
 
     for (let n = 0; n < scount; n++) {//loop through the silders
-        // Psudo Audio-Slider to add audio to the page
-            var audio_trial = {
-                type: 'audio-slider-response',
-                stimulus: stimuli_list[i].stimulus,
-                replay: true,
-                autoplay: true,
-                labels: slabels[0],
-                slider_width: 500,
-                slider_name: snames[n],
-                prompt: snames[n],
-            };
 
         var focus = {
             type: "html-keyboard-response",
@@ -445,6 +434,17 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
         }
         // For Odd counts (Transcription), we display survey-text.
         else if(n % 2 == 0){
+            // Psudo Audio-Slider to add audio to the page
+            var audio_trial = {
+                type: 'audio-slider-response',
+                stimulus: stimuli_list[i].stimulus,
+                replay: true,
+                autoplay: true,
+                labels: slabels[0],
+                slider_width: 500,
+                slider_name: snames[n],
+                prompt: snames[n],
+            };
             var text_response = {
                 type: 'survey-text',
                 replay: true,
