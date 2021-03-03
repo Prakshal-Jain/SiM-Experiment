@@ -435,7 +435,8 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
         // For Odd counts (Transcription), we display survey-text.
         else if(n % 2 == 0){
             var text_response = {
-                type: 'survey-text',
+                type: 'audio-text-response',
+                stimulus: stimuli_list[i].stimulus,
                 replay: true,
                 autoplay: true,
                 //require_movement: true,
