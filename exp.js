@@ -440,9 +440,7 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                 replay: true,
                 autoplay: true,
                 //require_movement: true,
-                labels: slabels[0],
-                slider_width: 20,
-                prompt: snames[n],
+                slider_width: 500,
                 preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
                 slider_name: snames[n],
                 on_finish: function (data) {
