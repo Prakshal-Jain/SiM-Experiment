@@ -437,7 +437,7 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
             var text_response = {
                 type: 'audio-text-response',
                 stimulus: stimuli_list[i].stimulus,
-                replay: true,
+                replay: false,
                 autoplay: true,
                 //require_movement: true,
                   questions: [
