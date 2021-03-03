@@ -91,10 +91,10 @@ jsPsych.plugins['audio-text-response'] = (function() {
       button_label: {
         type: jsPsych.plugins.parameterType.STRING,
         pretty_name: 'Button label',
-        default: 'Continue',
-        array: false,
-        description: 'Label of the button to advance.'
+        default:  'Continue',
+        description: 'The text that appears on the button to finish the trial.'
       },
+
     }
   }
 
@@ -174,13 +174,8 @@ jsPsych.plugins['audio-text-response'] = (function() {
       html += '&nbsp';
       html += '&nbsp';
     };
-    html += '<button id="#jspsych-audio-text-response-next" class="jspsych-btn" disabled >' + trial.button_label + '</button>';
+    html += '<button id="jspsych-audio-text-response-next" class="jspsych-btn">' + trial.button_label + '</button>';
     display_element.innerHTML = html;
-
-    // // add submit button
-    // if(trial.display_button){
-    //     html += '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
-    // }
 
 
     var response = {
@@ -200,7 +195,9 @@ jsPsych.plugins['audio-text-response'] = (function() {
           source.start();
           source.onended = function () {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
-            display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+            // if (movements.includes(true) == false) {
+              display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+            // }
           }
         }
         else {
@@ -208,7 +205,9 @@ jsPsych.plugins['audio-text-response'] = (function() {
           audio.play();
           audio.addEventListener('ended', function () {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
-            display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+            // if (movements.includes(true) == false) {
+              display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+            // }
           })
         }
         replay_time += 1;
@@ -297,7 +296,9 @@ jsPsych.plugins['audio-text-response'] = (function() {
           if (trial.replay == true) {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
           }
-          display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+          // if (movements.includes(true) == false) {
+            display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+          // }
 
         }
       }
@@ -307,14 +308,18 @@ jsPsych.plugins['audio-text-response'] = (function() {
           if (trial.replay == true) {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
           }
-          display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+          // if (movements.includes(true) == false) {
+          //   display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+          // }
         })
       }
     } else {
       if (context !== null) {
         startTime = context.currentTime;
       }
-      display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+      // if (movements.includes(true) == false) {
+      //   display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+      // }
     }
 
   // end trial if trial_duration is set
