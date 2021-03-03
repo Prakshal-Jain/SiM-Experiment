@@ -404,7 +404,17 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
     timeline.push(trial_start);
 
     for (let n = 0; n < scount; n++) {//loop through the silders
-        var m = n + 1;
+        // Psudo Audio-Slider to add audio to the page
+            var audio_trial = {
+                type: 'audio-slider-response',
+                stimulus: stimuli_list[i].stimulus,
+                replay: true,
+                autoplay: true,
+                labels: slabels[0],
+                slider_width: 0,
+                prompt: snames[n],
+            };
+
         var focus = {
             type: "html-keyboard-response",
             // stimulus: "<h2>Sound #: " + j + "</h2>" + '<p><font size="6">Please focus on <b>' + sprompts[n] + "</b> . </font></p>",
