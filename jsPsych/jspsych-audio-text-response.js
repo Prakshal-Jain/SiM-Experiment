@@ -296,9 +296,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
           if (trial.replay == true) {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
           }
-          // if (movements.includes(true) == false) {
-            display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
-          // }
+          display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
 
         }
       }
@@ -308,18 +306,14 @@ jsPsych.plugins['audio-text-response'] = (function() {
           if (trial.replay == true) {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
           }
-          // if (movements.includes(true) == false) {
-          //   display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
-          // }
+          display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
         })
       }
     } else {
       if (context !== null) {
         startTime = context.currentTime;
       }
-      // if (movements.includes(true) == false) {
-      //   display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
-      // }
+      display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
     }
 
   // end trial if trial_duration is set
