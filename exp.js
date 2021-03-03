@@ -457,11 +457,13 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
             };
             var trial = {
                 type: 'audio-button-response',
+                  on_load: function() {
+                        console.log('The trial just finished loading.');
+                    },
                 stimulus: stimuli_list[i].stimulus,
                 choices: ['Low', 'High'],
                 prompt: ""
             };
-            console.log(text_response)
             timeline.push(text_response);
         }
 
