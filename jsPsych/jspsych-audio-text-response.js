@@ -196,7 +196,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
           source.onended = function () {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
             // if (movements.includes(true) == false) {
-            //   display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+              display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
             // }
           }
         }
@@ -206,7 +206,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
           audio.addEventListener('ended', function () {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
             // if (movements.includes(true) == false) {
-            //   display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+              display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
             // }
           })
         }
@@ -284,11 +284,11 @@ jsPsych.plugins['audio-text-response'] = (function() {
 
     var startTime = performance.now();
     // start audio
-    if (trial.autoplay == true && context !== null) {
+    if (trial.autoplay == true) {
       if (trial.replay == true) {
         display_element.querySelector('#jspsych-audio-text-response-replay').disabled = true;
       }
-      //display_element.querySelector('#jspsych-audio-text-response-next').disabled = true;
+      display_element.querySelector('#jspsych-audio-text-response-next').disabled = true;
       if (context !== null) {
         startTime = context.currentTime;
         source.start(startTime);
@@ -297,7 +297,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
             display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
           }
           // if (movements.includes(true) == false) {
-          //   display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
+            display_element.querySelector('#jspsych-audio-text-response-next').disabled = false;
           // }
 
         }
