@@ -173,13 +173,8 @@ jsPsych.plugins['audio-text-response'] = (function() {
       html += '&nbsp';
       html += '&nbsp';
     };
-    // html += '<button id="jspsych-audio-sliders-response-next" class="jspsych-btn" disabled >' + trial.button_label + '</button>';
+    html += '<button id="jspsych-audio-sliders-response-next" class="jspsych-btn" disabled >' + trial.button_label + '</button>';
     display_element.innerHTML = html;
-
-    // add submit button
-    if(trial.display_button){
-        html += '<input type="submit" id="jspsych-survey-text-next" class="jspsych-btn jspsych-survey-text" value="'+trial.button_label+'"></input>';
-    }
 
 
 
