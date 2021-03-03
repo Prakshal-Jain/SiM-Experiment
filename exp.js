@@ -455,16 +455,8 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                     data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
                 }
             };
-
-            // Psudo Audio-Slider to add audio to the page
-            psudo = [];
-            var trial = {
-                type: 'audio-button-response',
-                stimulus: stimuli_list[i].stimulus,
-                choices: ['Low', 'High'],
-                prompt: "<p>Is the pitch high or low?</p>"
-            };
-            timeline.push(text_response+trial);
+            console.log(stimuli_list[i].stimulus, stimuli_list[i])
+            timeline.push(text_response);
         }
 
     }
