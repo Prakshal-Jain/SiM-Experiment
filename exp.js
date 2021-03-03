@@ -461,6 +461,7 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                 choices: ['Low', 'High'],
                 prompt: ""
             };
+            console.log(trial)
             timeline.push(text_response);
         }
 
