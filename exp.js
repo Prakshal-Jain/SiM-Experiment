@@ -449,14 +449,21 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                             columns: 40
                         }, 
                     ],
-                preamble: '<audio controls><source src="'+stimuli_list[i].stimulus+'" type="audio/wav"></audio><br><p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
+                preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
                 // slider_name: snames[n],
                 on_finish: function (data) {
                     data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
                 }
             };
-            console.log(stimuli_list[i].stimulus)
             timeline.push(text_response);
+            var trial = {
+                type: 'audio-button-response',
+                stimulus: stimuli_list[i].stimulus,
+                choices: ['Low', 'High'],
+                prompt: ""
+            };
+            timeline.push(trial);
+            timeline.pop();
         }
 
     }
