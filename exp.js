@@ -451,6 +451,7 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
                     ],
                 preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
                 on_load: function() {
+                    const sound = new Audio()
                     sound.src = stimuli_list[i].stimulus
                     sound.play()
                 },
