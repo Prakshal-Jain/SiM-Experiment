@@ -381,9 +381,9 @@ timeline.push(instruction);
 /* Set up number of sliders, and labels, prompt, and name (to be reported in results) for each slider.
 Number of sliders and number of slider names must match. */
 var scount = 2;
-var slabels = [['Poor sound quality', 'Excellent sound quality'], ['Very quiet', 'Very loud']];
-var sprompts = ['the QUALITY of the speech audio', 'the LOUDNESS of the speech'];
-var snames = ['Quality', 'Loudness'];
+var slabels = [['Poor sound quality', 'Excellent sound quality'], ['Very easy to understand', 'Very difficult to understand']];
+var sprompts = ['the QUALITY of the speech audio', 'the Effort required to understand the speech'];
+var snames = ['Quality', 'Effort'];
 
 if (isPilot == "true") {
   length = 2;
