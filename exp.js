@@ -381,7 +381,7 @@ timeline.push(instruction);
 /* Set up number of sliders, and labels, prompt, and name (to be reported in results) for each slider.
 Number of sliders and number of slider names must match. */
 var scount = 2;
-var slabels = [['Poor sound quality', 'Excellent sound quality'], ['Very easy to understand', 'Very difficult to understand']];
+var slabels = [['Very easy to understand', 'Very difficult to understand']];
 var sprompts = ['the QUALITY of the speech audio', 'the Effort required to understand the speech'];
 var snames = ['Quality', 'Effort'];
 
@@ -414,22 +414,50 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
         }
         timeline.push(focus);
 
-        var audio_trial = {
-            type: 'audio-slider-response',
-            stimulus: stimuli_list[i].stimulus,
-            replay: true,
-            autoplay: true,
-            //require_movement: true,
-            labels: slabels[n],
-            slider_width: 500,
-            prompt: snames[n],
-            preamble: '<p>Please use the scale below to indicate <b>' + sprompts[n] + '.</b></p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
-            slider_name: snames[n],
-            on_finish: function (data) {
-                data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
-            }
-        };
-        timeline.push(audio_trial);
+        if(n % 2 == 1){
+            var audio_trial = {
+                type: 'audio-slider-response',
+                stimulus: stimuli_list[i].stimulus,
+                replay: true,
+                autoplay: true,
+                //require_movement: true,
+                labels: slabels[0],
+                slider_width: 500,
+                prompt: snames[n],
+                preamble: '<p>Please use the scale below to indicate <b>' + sprompts[n] + '.</b></p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
+                slider_name: snames[n],
+                on_finish: function (data) {
+                    data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                }
+            };
+            timeline.push(audio_trial);
+        }
+        // For Odd counts (Transcription), we display survey-text.
+        else if(n % 2 == 0){
+            var text_response = {
+                type: 'survey-text',
+                replay: true,
+                autoplay: true,
+                //require_movement: true,
+                  questions: [
+                        {
+                            prompt: "", 
+                            name: snames[n],
+                            placeholder: "Transcribe the audio file here",
+                            required: true,
+                            rows: 5, 
+                            columns: 40
+                        }, 
+                    ],
+                preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + length + '</p>',
+                // slider_name: snames[n],
+                on_finish: function (data) {
+                    data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                }
+            };
+            timeline.push(text_response);
+        }
+
     }
 
     /* This timeline is to merge the different slider responses for the same stimulus into one row. */
@@ -445,10 +473,13 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
         },
         on_finish: function (data) {
             data.stimulus = stimuli_list[i].stimulus;
-            var audio_trials = jsPsych.data.get().last(2 * scount).filter({ trial_type: 'audio-slider-response' }).values();
+            
+            // Simplified the filtering process to filter multiple trial_type (OR logic)
+            var audio_trials = jsPsych.data.get().last(2 * scount).filter(x => x.trial_type == 'audio-slider-response' || x.trial_type == 'survey-text' ).values();
             for (let x = 0; x < scount; x++) {
                 data[snames[x]] = audio_trials[x][snames[x]];
             }
+
             if (data.reliability !== "0") {//calculate distance between reliability trials and difference in intelligibility ratings
                 var reliability_trials = jsPsych.data.get().filter({ reliability: stimuli_list[i].reliability, version: 2, all: true }).values();
                 if (reliability_trials.length == 2) {
