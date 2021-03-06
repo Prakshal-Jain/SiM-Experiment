@@ -414,6 +414,7 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
         }
         timeline.push(focus);
 
+        // For every part, first section will be transcription, and second will be Effort scale.
         if(n % 2 == 1){
             var audio_trial = {
                 type: 'audio-slider-response',
@@ -432,7 +433,7 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
             };
             timeline.push(audio_trial);
         }
-        // For Odd counts (Transcription), we display survey-text.
+        // For Odd counts (Transcription), we display audio-text-response.
         else if(n % 2 == 0){
             var text_response = {
                 type: 'audio-text-response',
