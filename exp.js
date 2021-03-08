@@ -303,21 +303,26 @@ var check_loop_node = {
 timeline.push(check_loop_node)
 
 /* Toggle for all audio files OR pseudorandom sample */
-toggle_selected = 0;
 var toggle_audio = {
     type: 'html-button-response',
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        toggle_selected = data.button_pressed;
+        if(data.button_pressed == 1){
+            var survey_trial = {
+            type: 'survey-text',
+            questions: [
+                {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
+            ],
+            on_finish: function (sizes) {
+                console.log(sizes);
+            }
+            };
+            timeline.push(survey_trial)
+        }
     }
 };
 timeline.push(toggle_audio)
-
-console.log(toggle_selected);
-if(toggle_selected == 1){
-    console.log("This is PsudoRandom file selection!")
-}
 
 /*switch to full screen*/
 var fullscreen_trial = {
