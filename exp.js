@@ -318,8 +318,10 @@ var check_toggle = {
         console.log("Checking condition...")
         var last_trial_correct = jsPsych.data.get().last(1).values()[0].button_pressed;
         if (last_trial_correct == 0) {
+            console.log("All files");
             return false;
         } else {
+            console.log("Psudo Files");
             return true;
         }
     }
