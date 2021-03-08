@@ -309,7 +309,7 @@ var toggle_audio = {
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        timeline.push(psudo)
+        timeline = [psudo]
     }
 };
 timeline.push(toggle_audio);
