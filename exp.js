@@ -309,13 +309,14 @@ var toggle_audio = {
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
         if(data.button_pressed == 1){
-            trigger_stimuli_size(3)
+            trigger_stimuli_size(3);
         }
     }
 };
 timeline.push(toggle_audio);
 
 function trigger_stimuli_size(lengths){
+    console.log("inside function!")
     var psudo = {
         type: 'survey-text',
         questions: [
