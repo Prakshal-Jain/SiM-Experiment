@@ -310,7 +310,7 @@ var psudo = {
         },
     ],
     on_finish: function (sizes) {
-        size = parseInt(sized.PsudoSize);
+        size = parseInt(sizes.PsudoSize);
         console.log(size);
     }
 };
