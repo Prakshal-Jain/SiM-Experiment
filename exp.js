@@ -324,7 +324,7 @@ var toggle_audio = {
         console.log(data.button_pressed);
         if(data.button_pressed == 0){
             console.log("Button was pressed")
-            // jsPsych.endCurrentTimeline();
+            jsPsych.endCurrentTimeline();
         }
     }
 };
