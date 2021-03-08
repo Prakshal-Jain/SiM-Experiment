@@ -304,7 +304,6 @@ timeline.push(check_loop_node)
 
 /* Toggle for all audio files OR pseudorandom sample */
 var toggle_audio = {
-    timeline: [psudo],
     type: 'html-button-response',
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
