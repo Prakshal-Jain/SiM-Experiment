@@ -309,24 +309,23 @@ var toggle_audio = {
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        if(data.button_pressed == 0){
-            console.log(timeline);
-        }
+        console.log(data)
     }
 };
+
 timeline.push(toggle_audio);
 
 
-var psudo = {
-    type: 'survey-text',
-    questions: [
-        {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
-    ],
-    on_finish: function (sizes) {
-        console.log(sizes);
-    }
-};
-timeline.push(psudo)
+// var psudo = {
+//     type: 'survey-text',
+//     questions: [
+//         {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
+//     ],
+//     on_finish: function (sizes) {
+//         console.log(sizes);
+//     }
+// };
+// timeline.push(psudo)
 
 /*switch to full screen*/
 var fullscreen_trial = {
