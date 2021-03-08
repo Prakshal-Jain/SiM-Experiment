@@ -310,7 +310,8 @@ var psudo = {
         },
     ],
     on_finish: function (sizes) {
-        console.log(sizes);
+        size = parseInt(sized.PsudoSize);
+        console.log(size);
     }
 };
 
@@ -321,9 +322,7 @@ var toggle_audio = {
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        console.log(data.button_pressed);
         if(data.button_pressed == 0){
-            console.log("Button was pressed")
             jsPsych.endCurrentTimeline();
         }
     }
