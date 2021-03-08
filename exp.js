@@ -35,6 +35,46 @@ $.ajax({
         stimuli_list = data;
     }
 });
+
+
+var psudo = {
+    type: 'survey-text',
+    questions: [
+        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize',
+        placeholder: "Enter number of audio files for experiment",
+        required: true
+        },
+    ],
+    on_finish: function (sizes) {
+        size = parseInt(sizes.PsudoSize);
+        if(size == 0){
+            alert("Please enter at least 1.")
+        }
+        else if(size < stimuli_list.length){
+            console.log("old_size"+stimuli_list.length);
+            stimuli_list = stimuli_list.slice(0, size);
+            console.log("new_size"+stimuli_list.length);
+        }
+        else{
+            alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
+        }
+    }
+};
+
+/* Toggle for all audio files OR pseudorandom sample */
+var toggle_audio = {
+    type: 'html-button-response',
+    timeline: [toggle_audio, psudo],
+    stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
+    choices: ['Play all audio files', 'Play psudorandom files'],
+    on_finish: function (data) {
+        if(data.button_pressed == 0){
+            jsPsych.endCurrentTimeline();
+        }
+    }
+};
+timeline.push(toggle_audio);
+
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
 
 /* Javascript runs on the client side, and using javascript alone cannot access folders / files on the server side.
@@ -301,40 +341,6 @@ var check_loop_node = {
     },
 }
 timeline.push(check_loop_node)
-
-var psudo = {
-    type: 'survey-text',
-    questions: [
-        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize',
-        placeholder: "Enter number of audio files for experiment"
-        },
-    ],
-    on_finish: function (sizes) {
-        size = parseInt(sizes.PsudoSize);
-        if(size < stimuli_list.length){
-            console.log("old_size"+stimuli_list.length);
-            stimuli_list = stimuli_list.slice(0, size);
-            console.log("new_size"+stimuli_list.length);
-        }
-        else{
-            alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
-        }
-    }
-};
-
-/* Toggle for all audio files OR pseudorandom sample */
-var toggle_audio = {
-    type: 'html-button-response',
-    timeline: [toggle_audio, psudo],
-    stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
-    choices: ['Play all audio files', 'Play psudorandom files'],
-    on_finish: function (data) {
-        if(data.button_pressed == 0){
-            jsPsych.endCurrentTimeline();
-        }
-    }
-};
-timeline.push(toggle_audio);
 
 /*switch to full screen*/
 var fullscreen_trial = {
