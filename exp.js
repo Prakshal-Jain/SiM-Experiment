@@ -311,7 +311,12 @@ var psudo = {
     ],
     on_finish: function (sizes) {
         size = parseInt(sizes.PsudoSize);
-        console.log(size);
+        if(size < stimuli_list.length){
+            stimuli_list = stimuli_list.slice(0, size);
+        }
+        else{
+            alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
+        }
     }
 };
 
