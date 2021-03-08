@@ -312,7 +312,19 @@ var toggle_audio = {
     }
 };
 
-timeline.push(toggle_audio);
+var check_toggle = {
+    timeline: [toggle_audio],
+    conditional_function: function () {
+        console.log("Checking condition...")
+        var last_trial_correct = jsPsych.data.get().last(1).values()[0].button_pressed;
+        if (last_trial_correct == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
+timeline.push(check_toggle)
 
 
 // var psudo = {
