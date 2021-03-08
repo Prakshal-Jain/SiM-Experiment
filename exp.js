@@ -314,6 +314,7 @@ var toggle_audio = {
 };
 timeline.push(toggle_audio)
 
+console.log(toggle_selected);
 if(toggle_selected == 1){
     console.log("This is PsudoRandom file selection!")
 }
