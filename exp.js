@@ -299,6 +299,9 @@ var check_loop_node = {
             return true;
         }
     },
+    on_finish: function (data) {
+        console.log(data.button_pressed);
+    }
 }
 timeline.push(check_loop_node)
 
@@ -309,7 +312,6 @@ var toggle_audio = {
     choices: ['Play all audio files', 'Play psudorandom files'],
 };
 timeline.push(toggle_audio)
-console.log(timeline)
 
 /*switch to full screen*/
 var fullscreen_trial = {
