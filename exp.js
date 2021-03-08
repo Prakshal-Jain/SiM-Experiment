@@ -320,7 +320,7 @@ var toggle_audio = {
     on_finish: function (data) {
         console.log("pushing psudo to timeline");
     },
-    timeline: [psudo]
+    timeline: [toggle_audio, psudo]
 };
 timeline.push(toggle_audio);
 
