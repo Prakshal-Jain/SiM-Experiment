@@ -301,44 +301,28 @@ var check_loop_node = {
     },
 }
 timeline.push(check_loop_node)
-button_toggled = 0;
+
+
 /* Toggle for all audio files OR pseudorandom sample */
 var toggle_audio = {
     type: 'html-button-response',
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        button_toggled = 1;
+        timeline.push(psudo)
     }
 };
+timeline.push(toggle_audio);
 
-var check_toggle = {
-    timeline: [toggle_audio],
-    conditional_function: function () {
-        console.log(button_toggled);
-        var last_trial_correct = jsPsych.data.get().last(1).values()[0].button_pressed;
-        if (last_trial_correct == 0) {
-            console.log("All files");
-            return false;
-        } else {
-            console.log("Psudo Files");
-            return true;
-        }
+var psudo = {
+    type: 'survey-text',
+    questions: [
+        {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
+    ],
+    on_finish: function (sizes) {
+        console.log(sizes);
     }
-}
-timeline.push(check_toggle)
-
-
-// var psudo = {
-//     type: 'survey-text',
-//     questions: [
-//         {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
-//     ],
-//     on_finish: function (sizes) {
-//         console.log(sizes);
-//     }
-// };
-// timeline.push(psudo)
+};
 
 /*switch to full screen*/
 var fullscreen_trial = {
