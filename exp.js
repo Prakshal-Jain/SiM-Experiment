@@ -304,9 +304,8 @@ timeline.push(check_loop_node)
 
 var psudo = {
     type: 'survey-text',
-    placeholder: "Enter number of audio files for experiment",
     questions: [
-        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize'}, 
+        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize',       placeholder: "Enter number of audio files for experiment"},
     ],
     on_finish: function (sizes) {
         console.log(sizes);
