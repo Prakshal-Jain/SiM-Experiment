@@ -309,7 +309,7 @@ var toggle_audio = {
     choices: ['Play all audio files', 'Play psudorandom files'],
 };
 timeline.push(toggle_audio)
-console.log(jsPsych.data.get().last(1).values())
+console.log(timeline)
 
 /*switch to full screen*/
 var fullscreen_trial = {
