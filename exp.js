@@ -305,11 +305,11 @@ timeline.push(check_loop_node)
 /* Toggle for all audio files OR pseudorandom sample */
 var toggle_audio = {
     type: 'html-button-response',
+    stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
-    prompt: "<p>Please choose how do you want to toggle the audio in the experiment.</p>"
 };
 timeline.push(toggle_audio)
-console.log(toggle_audio)
+console.log(jsPsych.data.get())
 
 /*switch to full screen*/
 var fullscreen_trial = {
