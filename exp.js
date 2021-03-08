@@ -310,7 +310,7 @@ var toggle_audio = {
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
         if(data.button_pressed == 0){
-            timeline.pop(0)
+            console.log(timeline);
         }
     }
 };
@@ -326,6 +326,7 @@ var psudo = {
         console.log(sizes);
     }
 };
+timeline.push(psudo)
 
 /*switch to full screen*/
 var fullscreen_trial = {
