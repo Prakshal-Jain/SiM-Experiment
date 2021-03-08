@@ -304,8 +304,9 @@ timeline.push(check_loop_node)
 
 var psudo = {
     type: 'survey-text',
+    placeholder: "Enter number of audio files for experiment",
     questions: [
-        {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
+        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize'}, 
     ],
     on_finish: function (sizes) {
         console.log(sizes);
@@ -315,12 +316,14 @@ var psudo = {
 /* Toggle for all audio files OR pseudorandom sample */
 var toggle_audio = {
     type: 'html-button-response',
+    timeline: [toggle_audio, psudo],
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        console.log("pushing psudo to timeline");
-    },
-    timeline: [toggle_audio, psudo]
+        if(data.button_pressed == 0){
+            timeline.pop();
+        }
+    }
 };
 timeline.push(toggle_audio);
 
