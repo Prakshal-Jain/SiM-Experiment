@@ -301,21 +301,21 @@ var check_loop_node = {
     },
 }
 timeline.push(check_loop_node)
-
+button_toggled = 0;
 /* Toggle for all audio files OR pseudorandom sample */
 var toggle_audio = {
     type: 'html-button-response',
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        console.log(data)
+        button_toggled = 1;
     }
 };
 
 var check_toggle = {
     timeline: [toggle_audio],
     conditional_function: function () {
-        console.log(jsPsych.data.get().last(1).values())
+        console.log(button_toggled);
         var last_trial_correct = jsPsych.data.get().last(1).values()[0].button_pressed;
         if (last_trial_correct == 0) {
             console.log("All files");
