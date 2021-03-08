@@ -311,7 +311,11 @@ var psudo = {
     ],
     on_finish: function (sizes) {
         size = parseInt(sizes.PsudoSize);
-        if(size < stimuli_list.length){
+        if(size <= 0){
+            alert("Number of files must be at least one. Set to default number = 1")
+            stimuli_list = stimuli_list.slice(0);
+        }
+        else if(size < stimuli_list.length){
             stimuli_list = stimuli_list.slice(0, size-1);  // ERROR --> Length not updating.
         }
         else{
