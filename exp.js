@@ -313,19 +313,16 @@ var psudo = {
 };
 
 /* Toggle for all audio files OR pseudorandom sample */
-var t = false;
 var toggle_audio = {
+    timeline: [psudo],
     type: 'html-button-response',
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
-        t = true;
         console.log("pushing psudo to timeline");
     }
 };
 timeline.push(toggle_audio);
-console.log(t);
-timeline.push(psudo);
 
 /*switch to full screen*/
 var fullscreen_trial = {
