@@ -308,6 +308,7 @@ var toggle_audio = {
     choices: ['Play all audio files', 'Play psudorandom files'],
     prompt: "<p>Please choose how do you want to toggle the audio in the experiment.</p>"
 };
+timeline.push(toggle_audio)
 console.log(toggle_audio)
 
 /*switch to full screen*/
