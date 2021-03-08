@@ -305,7 +305,9 @@ timeline.push(check_loop_node)
 var psudo = {
     type: 'survey-text',
     questions: [
-        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize',       placeholder: "Enter number of audio files for experiment"},
+        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize',
+        placeholder: "Enter number of audio files for experiment"
+        },
     ],
     on_finish: function (sizes) {
         console.log(sizes);
@@ -321,7 +323,8 @@ var toggle_audio = {
     on_finish: function (data) {
         console.log(data.button_pressed);
         if(data.button_pressed == 0){
-            jsPsych.endCurrentTimeline();
+            console.log("Button was pressed")
+            // jsPsych.endCurrentTimeline();
         }
     }
 };
