@@ -315,7 +315,7 @@ var toggle_audio = {
 var check_toggle = {
     timeline: [toggle_audio],
     conditional_function: function () {
-        console.log("Checking condition...")
+        console.log(jsPsych.data.get().last(1).values())
         var last_trial_correct = jsPsych.data.get().last(1).values()[0].button_pressed;
         if (last_trial_correct == 0) {
             console.log("All files");
