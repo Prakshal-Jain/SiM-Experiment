@@ -313,7 +313,7 @@ var psudo = {
         size = parseInt(sizes.PsudoSize);
         if(size < stimuli_list.length){
             console.log("old_size"+stimuli_list.length);
-            stimuli_list = stimuli_list.slice(0, size);
+            stimuli_list = stimuli_list.slice(0, size-1);
             console.log("new_size"+stimuli_list.length);
         }
         else{
