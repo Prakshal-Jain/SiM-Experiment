@@ -302,6 +302,14 @@ var check_loop_node = {
 }
 timeline.push(check_loop_node)
 
+/* Toggle for all audio files OR pseudorandom sample */
+var toggle_audio = {
+    type: 'html-button-response',
+    choices: ['Play all audio files', 'Play psudorandom files'],
+    prompt: "<p>Please choose how do you want to toggle the audio in the experiment.</p>"
+};
+console.log(toggle_audio)
+
 /*switch to full screen*/
 var fullscreen_trial = {
     type: 'fullscreen',
