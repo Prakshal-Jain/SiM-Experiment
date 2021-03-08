@@ -309,20 +309,24 @@ var toggle_audio = {
     choices: ['Play all audio files', 'Play psudorandom files'],
     on_finish: function (data) {
         if(data.button_pressed == 1){
-            var survey_trial = {
-            type: 'survey-text',
-            questions: [
-                {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
-            ],
-            on_finish: function (sizes) {
-                console.log(sizes);
-            }
-            };
-            timeline.push(survey_trial)
+            trigger_stimuli_size(3)
         }
     }
 };
-timeline.push(toggle_audio)
+timeline.push(toggle_audio);
+
+function trigger_stimuli_size(lengths){
+    var psudo = {
+        type: 'survey-text',
+        questions: [
+            {prompt: "Enter number of psudorandom files", name: 'PsudoSize'}, 
+        ],
+        on_finish: function (sizes) {
+            console.log(sizes);
+        }
+        };
+    timeline.push(psudo);
+}
 
 /*switch to full screen*/
 var fullscreen_trial = {
