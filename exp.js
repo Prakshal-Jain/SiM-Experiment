@@ -299,9 +299,6 @@ var check_loop_node = {
             return true;
         }
     },
-    on_finish: function (data) {
-        console.log(data.button_pressed);
-    }
 }
 timeline.push(check_loop_node)
 
@@ -310,6 +307,9 @@ var toggle_audio = {
     type: 'html-button-response',
     stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
     choices: ['Play all audio files', 'Play psudorandom files'],
+    on_finish: function (data) {
+        console.log(data.button_pressed);
+    }
 };
 timeline.push(toggle_audio)
 
