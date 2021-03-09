@@ -313,10 +313,10 @@ var psudo = {
         size = parseInt(sizes.PsudoSize);
         if(size <= 0){
             alert("Number of files must be at least one. Set to default number = 1")
-            stimuli_list = stimuli_list.slice(0, 0);
+            stimuli_list = stimuli_list.slice(0, 1);
         }
         else if(size < stimuli_list.length){
-            stimuli_list = stimuli_list.slice(0, size-1);  // ERROR --> Length not updating.
+            stimuli_list = stimuli_list.slice(0, size);  // ERROR --> Length not updating.
         }
         else{
             alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
