@@ -654,6 +654,10 @@ jsPsych.init({
         min_height: 600,
         audio: true
     },
+    on_data_update: function(data) {
+        console.log(data);
+        length = stimuli_list.length;
+    },
     on_finish: function () {
         //jsPsych.data.displayData();
 
