@@ -45,19 +45,7 @@ var psudo = {
     ],
     on_finish: function (sizes) {
         size = parseInt(sizes.PsudoSize);
-        if(size <= 0){
-            alert("Number of files must be at least one. Set to default number = 1")
-            load_json(0, 0)
-            // stimuli_list = stimuli_list.slice(0, 0);
-        }
-        else if(size < stimuli_list.length){
-            load_json(0, size-1)
-            // stimuli_list = stimuli_list.slice();  // ERROR --> Length not updating.
-        }
-        else{
-            alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
-            load_json(-1, 0)
-        }
+        load_json(size);
     }
 };
 
@@ -78,13 +66,24 @@ timeline.push(toggle_audio);
 
 /* Get stimuli from stimuli.json created by files_to_json.py */
 var stimuli_list = [];
-function load_json(start, end){
+function load_json(input_size){
     $.ajax({
         url: "stimuli.json",
         async: false,
         dataType: 'json',
         success: function (data) {
-            stimuli_list = (start != -1) ? data.slice(start, end) : data;
+            size = data.length
+            if(input_size <= 0){
+                alert("Number of files must be at least one. Set to default number = 1")
+                stimuli_list = data.slice(0, 0)
+            }
+            else if(input_size < size){
+                stimuli_list = data.slice(0, input_size-1)
+            }
+            else{
+                alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
+                stimuli_list = data
+            }
         }
     });
 }
