@@ -36,7 +36,6 @@ var pavlovia_init = {
 };
 timeline.push(pavlovia_init);
 
-ps_size = 0;
 var psudo = {
     type: 'survey-text',
     questions: [
@@ -48,16 +47,17 @@ var psudo = {
         size = parseInt(sizes.PsudoSize);
         if(size <= 0){
             alert("Number of files must be at least one. Set to default number = 1")
-            stimuli_list = stimuli_list.slice(0, 0);
+            load_json(0, 0)
+            // stimuli_list = stimuli_list.slice(0, 0);
         }
         else if(size < stimuli_list.length){
-            stimuli_list = stimuli_list.slice(0, size-1);  // ERROR --> Length not updating.
+            load_json(0, size-1)
+            // stimuli_list = stimuli_list.slice();  // ERROR --> Length not updating.
         }
         else{
             alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
+            load_json(-1, 0)
         }
-        ps_size = stimuli_list.length
-        console.log("Slice size set to "+ ps_size);
     }
 };
 
@@ -78,15 +78,16 @@ timeline.push(toggle_audio);
 
 /* Get stimuli from stimuli.json created by files_to_json.py */
 var stimuli_list = [];
-$.ajax({
-    url: "stimuli.json",
-    async: false,
-    dataType: 'json',
-    success: function (data) {
-        stimuli_list = data
-        console.log(ps_size, stimuli_list.length);
-    }
-});
+function load_json(start, end){
+    $.ajax({
+        url: "stimuli.json",
+        async: false,
+        dataType: 'json',
+        success: function (data) {
+            stimuli_list = (start != -1) ? data.slice(start, end) : data;
+        }
+    });
+}
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
 
 /* Javascript runs on the client side, and using javascript alone cannot access folders / files on the server side.
