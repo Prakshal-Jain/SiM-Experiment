@@ -515,7 +515,6 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
             project: stimuli_list[i].project, deviceID: stimuli_list[i].deviceID, audioID: stimuli_list[i].audioID, sentenceID: stimuli_list[i].sentenceID
         },
         on_finish: function (data) {
-            console.log(stimuli_list, i);
             data.stimulus = stimuli_list[i].stimulus;
             
             // Simplified the filtering process to filter multiple trial_type (OR logic)
@@ -655,9 +654,6 @@ jsPsych.init({
         min_width: 800,
         min_height: 600,
         audio: true
-    },
-    on_data_update: function(data) {
-        console.log('size of stimuli '+stimuli_list.length, length);
     },
     on_finish: function () {
         //jsPsych.data.displayData();
