@@ -50,7 +50,7 @@ $.ajax({
                 stimuli_list = data.slice(0, 1);
             }
             else if(settings.file_count <= data.length){
-                stimuli_list = data.slice(0, settings.file_count-1);
+                stimuli_list = data.slice(0, settings.file_count);
             }
             else{
                 alert("The entered number of psudorandom audio files ("+settings.file_count+") exceeds the number of available files. It will default to maximum number of files ("+data.length+").")
