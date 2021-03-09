@@ -13,5 +13,5 @@ Relative address in project: ./jsPsych/jspsych-audio-text-response.js
 
 4. Toggle the code such that either a) all audio files in the directory will be played or b) a pseudorandom sample of the files will be played.
 Created a "settings.json" file that contains criteria - "isPsudoRandom" to toggle between <br>
-a. all audio files
+a. all audio files<br>
 b. psudorandom files (in this case "file_count" takes in the number of files to be considered for experiment).

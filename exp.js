@@ -25,6 +25,13 @@ if (checkiPad == "iPad" || String(browser.tablet) !== "undefined" || String(brow
     close();
 }
 
+// settings.json consist of toggles (between all files OR psudorandom files)
+/* 
+    {
+        "isPsudoRandom": <true if want to consider a random subset of all the files, otherwise false>,
+        "file_count": <number of psudorandom files to consider>
+    }
+*/
 settings = {}
 $.ajax({
     url: "settings.json",
@@ -34,8 +41,6 @@ $.ajax({
         settings = data;
     }
 });
-
-console.log(settings)
 
 /* Get stimuli from stimuli.json created by files_to_json.py */
 var stimuli_list = [];
