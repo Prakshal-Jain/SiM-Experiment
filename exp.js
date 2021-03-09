@@ -656,7 +656,7 @@ jsPsych.init({
         audio: true
     },
     on_data_update: function(data) {
-        console.log('size of stimuli '+stimuli_list.length);
+        console.log('size of stimuli '+stimuli_list.length, length);
     },
     on_finish: function () {
         //jsPsych.data.displayData();
