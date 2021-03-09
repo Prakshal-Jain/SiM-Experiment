@@ -57,6 +57,7 @@ var psudo = {
             alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
         }
         ps_size = stimuli_list.length
+        console.log("Slice size set to "+ ps_size);
     }
 };
 
@@ -83,10 +84,10 @@ $.ajax({
     dataType: 'json',
     success: function (data) {
         stimuli_list = data.slice(0, ps_size-1);
+        console.log(ps_size, stimuli_list.length);
     }
 });
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
-console.log(stimuli_list.length)
 
 /* Javascript runs on the client side, and using javascript alone cannot access folders / files on the server side.
 Also, pavlovia does not allow PHP, jQuery or xmlhttprequest() to access server side folders / files for security reasons.
