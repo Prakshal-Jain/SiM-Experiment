@@ -321,6 +321,7 @@ var psudo = {
         else{
             alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
         }
+        length = stimuli_list.length;
     }
 };
 
@@ -655,8 +656,7 @@ jsPsych.init({
         audio: true
     },
     on_data_update: function(data) {
-        console.log(data);
-        length = stimuli_list.length;
+        console.log('size of stimuli '+stimuli_list.length);
     },
     on_finish: function () {
         //jsPsych.data.displayData();
