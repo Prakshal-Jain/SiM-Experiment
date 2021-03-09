@@ -47,7 +47,7 @@ $.ajax({
         if(isPsudoRandom){
             if(settings.file_count <= 1){
                 alert("Number of files must be at least one. Set to default number = 1")
-                stimuli_list = data.slice(0, 1);
+                stimuli_list = data.slice(0, 2);
             }
             else if(settings.file_count <= data.length){
                 stimuli_list = data.slice(0, settings.file_count-1);
