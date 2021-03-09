@@ -83,7 +83,7 @@ $.ajax({
     async: false,
     dataType: 'json',
     success: function (data) {
-        stimuli_list = data.slice(0, ps_size-1);
+        stimuli_list = data
         console.log(ps_size, stimuli_list.length);
     }
 });
