@@ -75,10 +75,10 @@ function load_json(input_size){
             size = data.length
             if(input_size <= 0){
                 alert("Number of files must be at least one. Set to default number = 1")
-                stimuli_list = data.slice(0, 0)
+                stimuli_list = data.slice(0, 1)
             }
             else if(input_size < size){
-                stimuli_list = data.slice(0, input_size-1)
+                stimuli_list = data.slice(0, input_size)
             }
             else{
                 alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
