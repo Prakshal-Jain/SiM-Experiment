@@ -25,68 +25,16 @@ if (checkiPad == "iPad" || String(browser.tablet) !== "undefined" || String(brow
     close();
 }
 
-
-/* create timeline */
-var timeline = [];
-
-/* init connection with pavlovia.org */
-var pavlovia_init = {
-    type: "pavlovia",
-    command: "init"
-};
-timeline.push(pavlovia_init);
-
-var psudo = {
-    type: 'survey-text',
-    questions: [
-        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize',
-        placeholder: "Enter number of audio files for experiment"
-        },
-    ],
-    on_finish: function (sizes) {
-        size = parseInt(sizes.PsudoSize);
-        load_json(size);
-    }
-};
-
-/* Toggle for all audio files OR pseudorandom sample */
-var toggle_audio = {
-    type: 'html-button-response',
-    timeline: [toggle_audio, psudo],
-    stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
-    choices: ['Play all audio files', 'Play psudorandom files'],
-    on_finish: function (data) {
-        if(data.button_pressed == 0){
-            jsPsych.endCurrentTimeline();
-        }
-    }
-};
-timeline.push(toggle_audio);
-
-
 /* Get stimuli from stimuli.json created by files_to_json.py */
 var stimuli_list = [];
-function load_json(input_size){
-    $.ajax({
-        url: "stimuli.json",
-        async: false,
-        dataType: 'json',
-        success: function (data) {
-            size = data.length
-            if(input_size <= 0){
-                alert("Number of files must be at least one. Set to default number = 1")
-                stimuli_list = data.slice(0, 1)
-            }
-            else if(input_size < size){
-                stimuli_list = data.slice(0, input_size)
-            }
-            else{
-                alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
-                stimuli_list = data
-            }
-        }
-    });
-}
+$.ajax({
+    url: "stimuli.json",
+    async: false,
+    dataType: 'json',
+    success: function (data) {
+        stimuli_list = data;
+    }
+});
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
 
 /* Javascript runs on the client side, and using javascript alone cannot access folders / files on the server side.
@@ -179,6 +127,18 @@ var check_consent = function (elem) {
     return false;
 };
 
+
+
+
+/* create timeline */
+var timeline = [];
+
+/* init connection with pavlovia.org */
+var pavlovia_init = {
+    type: "pavlovia",
+    command: "init"
+};
+timeline.push(pavlovia_init);
 
 /* generate a random subject ID with 16 characters */
 //var participant_id = jsPsych.randomization.randomID(16);
@@ -341,6 +301,42 @@ var check_loop_node = {
     },
 }
 timeline.push(check_loop_node)
+
+var psudo = {
+    type: 'survey-text',
+    questions: [
+        {prompt: "Enter number of psudorandom audio files for experiment", name: 'PsudoSize',
+        placeholder: "Enter number of audio files for experiment"
+        },
+    ],
+    on_finish: function (sizes) {
+        size = parseInt(sizes.PsudoSize);
+        if(size <= 0){
+            alert("Number of files must be at least one. Set to default number = 1")
+            stimuli_list = stimuli_list.slice(0, 0);
+        }
+        else if(size < stimuli_list.length){
+            stimuli_list = stimuli_list.slice(0, size-1);  // ERROR --> Length not updating.
+        }
+        else{
+            alert("The entered number of psudorandom audio files ("+size+") exceeds the number of available files. It will default to maximum number of files ("+stimuli_list.length+").")
+        }
+    }
+};
+
+/* Toggle for all audio files OR pseudorandom sample */
+var toggle_audio = {
+    type: 'html-button-response',
+    timeline: [toggle_audio, psudo],
+    stimulus: '<p>Please choose how do you want to toggle the audio in the experiment.</p>',
+    choices: ['Play all audio files', 'Play psudorandom files'],
+    on_finish: function (data) {
+        if(data.button_pressed == 0){
+            jsPsych.endCurrentTimeline();
+        }
+    }
+};
+timeline.push(toggle_audio);
 
 /*switch to full screen*/
 var fullscreen_trial = {
