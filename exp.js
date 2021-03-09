@@ -44,15 +44,20 @@ $.ajax({
     async: false,
     dataType: 'json',
     success: function (data) {
-        if(settings.file_count <= 1){
-            alert("Number of files must be at least one. Set to default number = 1")
-            stimuli_list = data.slice(0, 0);
-        }
-        else if(settings.file_count <= data.length){
-            stimuli_list = data.slice(0, settings.file_count-1);
+        if(isPsudoRandom){
+            if(settings.file_count <= 1){
+                alert("Number of files must be at least one. Set to default number = 1")
+                stimuli_list = data.slice(0, 1);
+            }
+            else if(settings.file_count <= data.length){
+                stimuli_list = data.slice(0, settings.file_count-1);
+            }
+            else{
+                alert("The entered number of psudorandom audio files ("+settings.file_count+") exceeds the number of available files. It will default to maximum number of files ("+data.length+").")
+                stimuli_list = data
+            }
         }
         else{
-            alert("The entered number of psudorandom audio files ("+settings.file_count+") exceeds the number of available files. It will default to maximum number of files ("+data.length+").")
             stimuli_list = data
         }
     }
