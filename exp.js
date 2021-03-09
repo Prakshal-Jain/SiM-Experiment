@@ -514,8 +514,7 @@ for (let i = 0; i < length; i++) {//loop through the silmuli list
             project: stimuli_list[i].project, deviceID: stimuli_list[i].deviceID, audioID: stimuli_list[i].audioID, sentenceID: stimuli_list[i].sentenceID
         },
         on_finish: function (data) {
-            console.log(stimuli_list, i)
-            data.stimulus = stimuli_list[i].stimulus;
+            // data.stimulus = stimuli_list[i].stimulus;
             
             // Simplified the filtering process to filter multiple trial_type (OR logic)
             var audio_trials = jsPsych.data.get().last(2 * scount).filter(x => x.trial_type == 'audio-slider-response' || x.trial_type == 'survey-text' ).values();
