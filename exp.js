@@ -44,10 +44,10 @@ $.ajax({
     async: false,
     dataType: 'json',
     success: function (data) {
-        if(isPsudoRandom == true){
+        if(settings.isPsudoRandom){
             if(settings.file_count <= 1){
                 alert("Number of files must be at least one. Set to default number = 1")
-                stimuli_list = data.slice(0, 2);
+                stimuli_list = data.slice(0, 1);
             }
             else if(settings.file_count <= data.length){
                 stimuli_list = data.slice(0, settings.file_count-1);
