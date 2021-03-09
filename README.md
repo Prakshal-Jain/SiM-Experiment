@@ -10,3 +10,8 @@ Relative address in project: ./jsPsych/jspsych-audio-text-response.js
 
 3. exp.js: Replaced "Loudness" with "Effort" throughout the experiment with anchors "Very easy to understand" to "Very difficult to understand". Rating scale occurs after the transcription.
 (code commented accordingly).
+
+4. Toggle the code such that either a) all audio files in the directory will be played or b) a pseudorandom sample of the files will be played.
+Created a "settings.json" file that contains criteria - "isPsudoRandom" to toggle between
+- all audio files
+- psudorandom files (in this case "file_count" takes in the number of files to be considered for experiment).
