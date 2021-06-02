@@ -184,7 +184,7 @@ timeline.push(consent_form);
 /* define welcome message trial */
 var welcome_block = {
     type: "html-button-response",
-    stimulus: "<h2>Welcome to the perception experiment. </h2> <p>In this experiment, you will be asked to listen to audio recordings of speech samples. You will type out exactly what you heard the speaker say. If you do not understand everything, just type what you did understand. Do not replay the sound unless there was some reason you could not hear the utterance (for example, if there was an unexpected loud noise outside). You will also rate how effortful each utterance was to understand by marking along a scale. Feel free to use as much or as little of the scale as you feel is appropriate. Once the experiment has started, you will be asked not to further adjust your volume or your screen until it has finished.</p>",
+    stimulus: "<h2>Welcome to the perception experiment. </h2> <p>In this experiment, you will be asked to listen to audio recordings of speech samples. You will be asked to type what you heard the person say and rate how much effort it took to understand the speech. <br> While you do have the option to replay the utterance, please do not press replay unless there was some reason you could not hear the utterance (for example, if there was an unexpected loud noise outside). <br> Once the experiment has started, you will be asked not to further adjust your volume or your screen until it has finished.</p>",
     choices: ['Continue']
 };
 timeline.push(welcome_block);
@@ -329,7 +329,7 @@ timeline.push(fullscreen_trial);
 var instruction = {
     type: 'instructions',
     pages: [
-        'Welcome to the experiment. Please listen to the speech presented to you in the following task. You will be asked to <br> 1) Type out exactly what you heard the speaker say. Type what you understood, even if you are not completely sure. If you have no idea, type NA. <br> 2) Rate how much effort it took to understand the speech. <br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
+        'Welcome to the experiment. Please listen to the speech presented to you in the following task. Sometimes there will be background noise. Your task is to: <br> 1) Type out exactly what you heard the speaker say. Type you exactly what you heard, even if you are not completely sure you are correct. If you have no idea, you can type NA. <br> 2) Rate how much effort it took to understand the speech. <br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
         'While you do have the option to replay each sentence, we ask that you <strong>DO NOT PRESS REPLAY</strong> unless something happens that has made it difficult for you to hear the item (for example, if there is a loud, unexpected sound in your environment).',
         "The experiment is self-paced. Please complete it in one sitting. It is expected to take approximately ten minutes. Click 'Continue' to start the experiment."
     ],
@@ -397,7 +397,7 @@ timeline.push(instruction);
 Number of sliders and number of slider names must match. */
 var scount = 2;
 var slabels = [['Very easy to understand', 'Very difficult to understand']];
-var sprompts = ['the speech and type exactly what you hear', 'the Effort required to understand the speech'];
+var sprompts = ['what the speaker is saying and type exactly what you hear', 'the effort required to understand what the speaker is saying'];
 var snames = ['Transcription', 'Effort'];
 
 // if (isPilot == "true") {
