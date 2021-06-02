@@ -397,7 +397,7 @@ timeline.push(instruction);
 Number of sliders and number of slider names must match. */
 var scount = 2;
 var slabels = [['Very easy to understand', 'Very difficult to understand']];
-var sprompts = ['the speech and transcribe what you hear', 'the Effort required to understand the speech'];
+var sprompts = ['the speech and type exactly what you hear', 'the Effort required to understand the speech'];
 var snames = ['Transcription', 'Effort'];
 
 // if (isPilot == "true") {
@@ -466,7 +466,7 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                             columns: 40
                         }, 
                     ],
-                preamble: '<p>Please enter the transcription of the text you just heard</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + stimuli_list.length + '</p>',
+                preamble: '<p>Please type exactly what you heard the speaker say. If you are unsure, just type what you think you heard. If you have no idea, just type NA.</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please ONLY use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + stimuli_list.length + '</p>',
                 // on_load: function() {
                 //     const sound = new Audio()
                 //     sound.src = stimuli_list[i].stimulus
