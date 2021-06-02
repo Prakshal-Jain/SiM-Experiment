@@ -69,23 +69,6 @@ $.ajax({
 });
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
 
-/* Javascript runs on the client side, and using javascript alone cannot access folders / files on the server side.
-Also, pavlovia does not allow PHP, jQuery or xmlhttprequest() to access server side folders / files for security reasons.
-Thus, stimuli has to be defined and listed in advance. */
-/*var stimuli_list = [
-    { stimulus: "audio/kamp_cv_max_1.mp3", reliability: 0, test: true, project: "kamp", deviceID: "cv", audioID: "max", sentenceID: "1" },
-    { stimulus: "audio/kamp_cv_max_2.mp3", reliability: 0, test: true, project: "kamp", deviceID: "cv", audioID: "max", sentenceID: "2" },
-    { stimulus: "audio/kamp_cv_max_3.mp3", reliability: 0, test: true, project: "kamp", deviceID: "cv", audioID: "max", sentenceID: "3" },
-    { stimulus: "audio/kamp_mb_max_1.mp3", reliability: 0, test: true, project: "kamp", deviceID: "mb", audioID: "max", sentenceID: "1" },
-    { stimulus: "audio/kamp_mb_max_2.mp3", reliability: 0, test: true, project: "kamp", deviceID: "mb", audioID: "max", sentenceID: "2" },
-    { stimulus: "audio/kamp_mb_max_3.mp3", reliability: 0, test: true, project: "kamp", deviceID: "mb", audioID: "max", sentenceID: "3" },
-    { stimulus: "audio/kamp_vb_max_1.mp3", reliability: 0, test: true, project: "kamp", deviceID: "vb", audioID: "max", sentenceID: "1" },
-    { stimulus: "audio/kamp_vb_max_2.mp3", reliability: 0, test: true, project: "kamp", deviceID: "vb", audioID: "max", sentenceID: "2" },
-    { stimulus: "audio/kamp_vb_max_3.mp3", reliability: 0, test: true, project: "kamp", deviceID: "vb", audioID: "max", sentenceID: "3" },
-    { stimulus: "audio/kamp_wa_max_2.mp3", reliability: 0, test: true, project: "kamp", deviceID: "wa", audioID: "max", sentenceID: "2" },
-    { stimulus: "audio/kamp_wa_max_3.mp3", reliability: 0, test: true, project: "kamp", deviceID: "wa", audioID: "max", sentenceID: "3" }];*/
-
-
 
 /* To get the number of 20% of the stimuli. */
 var percent20 = Math.round(stimuli_list.length * 0.2);
@@ -201,7 +184,7 @@ timeline.push(consent_form);
 /* define welcome message trial */
 var welcome_block = {
     type: "html-button-response",
-    stimulus: "<h2>Welcome to the perception experiment. </h2> <p>In this experiment, you will be asked to listen to audio recordings of amplified speech samples. You will rate the speech along a scale with anchors. Feel free to use as much or as little of the scale as you feel is appropriate. Once the experiment has started, you will be asked not to further adjust your volume or your screen until it has finished.</p>",
+    stimulus: "<h2>Welcome to the perception experiment. </h2> <p>In this experiment, you will be asked to listen to audio recordings of speech samples. You will type out exactly what you heard the speaker say. If you do not understand everything, just type what you did understand. Do not replay the sound unless there was some reason you could not hear the utterance (for example, if there was an unexpected loud noise outside). You will also rate how effortful each utterance was to understand by marking along a scale. Feel free to use as much or as little of the scale as you feel is appropriate. Once the experiment has started, you will be asked not to further adjust your volume or your screen until it has finished.</p>",
     choices: ['Continue']
 };
 timeline.push(welcome_block);
@@ -229,7 +212,7 @@ var background1 = {
         },
         {
             name: 'disorder',
-            prompt: '<p><strong>3.</strong> To your knowledge, do you have any history of a hearing, speech, language, or neurological disorder?</p>',
+            prompt: '<p><strong>3.</strong> To your knowledge, do you have any history of a hearing, speech, language, or neurological difficulties?</p>',
             placeholder: "respond with yes or no",
             required: true
         },
@@ -346,9 +329,9 @@ timeline.push(fullscreen_trial);
 var instruction = {
     type: 'instructions',
     pages: [
-        'Welcome to the experiment. Please listen to the speech presented to you in the following task. You will be asked to provide <br> 1) the <strong>Transcription</strong> of the speech: When entering the transcription of what you heard in the audio, pay attention to how loud, strong, or forceful the sound is. <br> 2) ratings of the <strong>Effort</strong> required to understand the audio: When rating the effort to understand the audio, pay attention to how much of the speech you can understand. <br><br> You will be asked to indicate your judgment using text input for the <strong>Transcription</strong> and a sliding scale with anchors (for the <strong>Effort</strong>). You are encouraged to re-input the text and use as much of the scale as you feel is appropriate. <br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
-        'For each new utterance, please provide your rating after it finishes playing. <br> While you do have the option to replay each sentence, we ask that you <strong>DO NOT PRESS REPLAY</strong> unless something happens that has made it difficult for you to hear the item (for example, if there is a loud, unexpected sound in your environment).',
-        "The experiment is self-paced. Please complete it in one sitting. It is expected to take approximately thirty minutes. Click 'Continue' to start the experiment."
+        'Welcome to the experiment. Please listen to the speech presented to you in the following task. You will be asked to <br> 1) Type out exactly what you heard the speaker say. Type what you understood, even if you are not completely sure. If you have no idea, type NA. <br> 2) Rate how much effort it took to understand the speech. <br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
+        'While you do have the option to replay each sentence, we ask that you <strong>DO NOT PRESS REPLAY</strong> unless something happens that has made it difficult for you to hear the item (for example, if there is a loud, unexpected sound in your environment).',
+        "The experiment is self-paced. Please complete it in one sitting. It is expected to take approximately ten minutes. Click 'Continue' to start the experiment."
     ],
     button_label_next: 'Continue',
     show_clickable_nav: true
