@@ -266,7 +266,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
     var trialdata = {
         "rt": response.rt,
         "stimulus": trial.stimulus,
-        "response": response.response,
+        "response": response.response.replace(/<[^>]*>?/gm, ''),
         "replay": response.replay
         };
 
