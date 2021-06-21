@@ -262,6 +262,7 @@ jsPsych.plugins['audio-text-response'] = (function() {
       audio.removeEventListener('ended', end_trial);
     };
 
+    console.log(response.response.replace(/<[^>]*>?/gm, ''))
     // save data
     var trialdata = {
         "rt": response.rt,
