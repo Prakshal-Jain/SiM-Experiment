@@ -1,7 +1,7 @@
 /* Experiment */
 
 // TOGGLE PILOT OPTIONS
-var isPilot = "false"
+var isPilot = "true"
 
 // if (isPilot == "true") {
 //
@@ -69,7 +69,6 @@ $.ajax({
 });
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
 
-
 /* To get the number of 20% of the stimuli. */
 var percent20 = Math.round(stimuli_list.length * 0.2);
 
@@ -77,17 +76,18 @@ var percent20 = Math.round(stimuli_list.length * 0.2);
 assign non-zero numbers to reliability trials;
 add to reliability list */
 var reliability_list = [];
-var track_reliability = {};
+
+// reliability_diff_list = {<reliability index>: (<reliability difference>, <slider effort response>)}
+var reliability_diff_list = {}
 for (let i = 0; i < percent20; i++) {
     stimuli_list[i].reliability = i + 1;
+    reliability_diff_list[i + 1] = [-1, -1]
     reliability_list.push(stimuli_list[i]);
-    reliability_list[stimuli_list[i]] = -1;
 }
 
 /* Re-randomize stimuli list;
 without this re-randomization, the reliability trials will be the first 20% of the stimuli. */
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
-
 /* Function to get a random number between min and max.
 The maximum is inclusive and the minimum is inclusive. */
 function getRandomInt(min, max) {
@@ -113,8 +113,6 @@ for (let i = 0; i < percent20; i++) {
 
     }
 }
-
-console.log(stimuli_list)
 
 var attention_list = [
     { stimulus: "audio/attention/attention1_70.wav", test: false, choices: ['Who did you meet there?', 'When did you buy it?', 'What do you want?', 'Will she come?', "What's that?"], correct: 4 },
@@ -153,11 +151,11 @@ var check_consent = function (elem) {
 var timeline = [];
 
 /* init connection with pavlovia.org */
-var pavlovia_init = {
-    type: "pavlovia",
-    command: "init"
-};
-timeline.push(pavlovia_init);
+// var pavlovia_init = {
+//     type: "pavlovia",
+//     command: "init"
+// };
+// timeline.push(pavlovia_init);
 
 /* generate a random subject ID with 16 characters */
 //var participant_id = jsPsych.randomization.randomID(16);
@@ -342,73 +340,11 @@ var instruction = {
 }
 timeline.push(instruction);
 
-// ################################################################################
-// # Version 1 ####################################################################
-// ################################################################################
-/* Version 1: simple, one slider, no attention check, force listening */
-// var version1 = {
-//     type: "html-button-response",
-//     stimulus: " <p> Version 1: simple, one slider, no attention check, force listening </p>",
-//     choices: ['Continue']
-// };
-// timeline.push(version1);
-//
-// for (let i = 0; i < stimuli_list.length; i++) {
-//     var j = i + 1;
-//     var audio_trial = {
-//         type: 'audio-slider-response',
-//         stimulus: stimuli_list[i].stimulus,
-//         replay: true,
-//         autoplay: true,
-//         //require_movement: true,
-//         labels: ['Not Intelligible', 'Intelligible'],
-//         slider_width: 500,
-//         prompt: '<p>Intelligibility</p>',
-//         preamble: '<p>Instruction: ...............................</p>' + '<p><b>Trial #:' + j + '</b></p>',
-//         slider_name: 'intelligibility',
-//         data: {//append reliability, order, version and other information to data
-//             reliability: stimuli_list[i].reliability, order: j, version: 1,
-//             project: stimuli_list[i].project, deviceID: stimuli_list[i].deviceID, audioID: stimuli_list[i].audioID, sentenceID: stimuli_list[i].sentenceID
-//         },
-//         on_finish: function (data) {
-//             data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
-//             if (data.reliability !== "0") { //calculate distance between reliability trials and difference in intelligibility ratings
-//                 var reliability_trials = jsPsych.data.get().filter({ reliability: stimuli_list[i].reliability, version: 1 }).values();
-//                 if (reliability_trials.length == 2) {
-//                     data.reliability_distance = reliability_trials[1].order - reliability_trials[0].order;
-//                     data.intelligibility_diff = reliability_trials[1].intelligibility - reliability_trials[0].intelligibility;
-//                 }
-//             }
-//
-//         }
-//     };
-//     timeline.push(audio_trial);
-// };
 
-// ################################################################################
-// # Version 2 ####################################################################
-// ################################################################################
-/* Version 2: one slider per page, several pages per stimulus, no attention check, force listening */
-// var version2 = {
-//     type: "html-button-response",
-//     stimulus: " <p> Experiment ID: KAmp IE. Press Continue when you are ready to begin the experiment. </p>",
-//     // stimulus: " <p> Version 2: one slider per page, several pages per stimulus, no attention check, force listening </p>",
-//     choices: ['Continue']
-// };
-// timeline.push(version2);
-
-/* Set up number of sliders, and labels, prompt, and name (to be reported in results) for each slider.
-Number of sliders and number of slider names must match. */
 var scount = 2;
 var slabels = [['Very easy to understand', 'Very difficult to understand']];
 var sprompts = ['what the speaker is saying and type exactly what you hear', 'the effort required to understand what the speaker is saying'];
 var snames = ['Transcription', 'Effort'];
-
-// if (isPilot == "true") {
-//   length = 2;
-// } else {
-//   length = stimuli_list.length;
-// }
 
 for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
 //for (let i = 0; i < 5; i++) {//loop through the silmuli list
@@ -448,6 +384,18 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                 slider_name: snames[n],
                 on_finish: function (data) {
                     data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                    const effort = parseInt(data.Effort)
+                    if('reliability' in stimuli_list[i]){
+                        const diff = reliability_diff_list[stimuli_list[i].reliability]
+                        if(diff[1] == -1){
+                            reliability_diff_list[stimuli_list[i].reliability] = [0, effort]
+                        }
+                        else{
+                            reliability_diff_list[stimuli_list[i].reliability] = [effort-diff[1], effort]
+                            data.reliability_effort_difference = reliability_diff_list[stimuli_list[i].reliability][0]
+                            data.effort_reliability = reliability_diff_list[stimuli_list[i].reliability][1]
+                        }
+                    }
                 }
             };
             timeline.push(audio_trial);
@@ -523,94 +471,6 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
 
 }
 
-// ################################################################################
-// # Version 1 ####################################################################
-// ################################################################################
-/* Version 3: multiple sliders, with attention check, force listening, respond after listening */
-/*var version3 = {
-    type: "html-button-response",
-    stimulus: " <p> Version 3: multiple sliders, with attention check, force listening, respond after listening </p>",
-    choices: ['Continue']
-};
-timeline.push(version3);
-
-for (let i = 0; i < stimuli_w_attention_list.length; i++) {
-    var audio_play = {
-        type: 'audio-keyboard-response',
-        stimulus: stimuli_w_attention_list[i].stimulus,
-        choices: jsPsych.NO_KEYS,
-        trial_ends_after_audio: true
-    };
-    timeline.push(audio_play);
-    if (stimuli_w_attention_list[i].test == true) {
-        var audio_trial = {
-            type: 'audio-sliders-response',
-            stimulus: stimuli_w_attention_list[i].stimulus,
-            replay: true,
-            autoplay: false,
-            slider_count: 5,
-            //require_movement: [true, false, false, false, false],
-            labels: [['Not Intelligible', 'Intelligible'], ['Not Natural', 'Natural'], ['0', '100'], ['0', '100'], ['0', '100']],
-            slider_width: 500,
-            prompt: ['<p>How <b>Intelligible</b> is the speech sound?</p>', '<p>Naturalness</p>', '<p>Perception 3</p>', '<p>Perception 4</p>', '<p>Perception 5</p>'],
-            slider_name: ['Intelligibility', 'Naturalness', 'Perception3', 'Perception4', 'Perception5'],
-            data: {
-                reliability: stimuli_w_attention_list[i].reliability, order: i + 1, version: 3,
-                project: stimuli_w_attention_list[i].project, deviceID: stimuli_w_attention_list[i].deviceID,
-                audioID: stimuli_w_attention_list[i].audioID, sentenceID: stimuli_w_attention_list[i].sentenceID
-            },
-            on_finish: function (data) {
-                data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
-                if (data.reliability !== 0) {
-                    var reliability_trials = jsPsych.data.get().filter({ reliability: stimuli_w_attention_list[i].reliability, version: 3 }).values();
-                    if (reliability_trials.length == 2) {
-                        data.reliability_distance = reliability_trials[1].order - reliability_trials[0].order;
-
-                        var names = ['Intelligibility', 'Naturalness', 'Perception3', 'Perception4', 'Perception5'];
-                        for (let j = 0; j < names.length; j++) {
-                            data[names[j] + '_diff'] = reliability_trials[1][names[j]] - reliability_trials[0][names[j]];
-                        }
-                    }
-                }
-
-            }
-
-        };
-        timeline.push(audio_trial);
-    }
-    else {
-        var attention_trial = {
-            type: 'html-button-response',
-            stimulus: "<p>Please select the sentence you just heard:</p>" + "<p></p>",
-            choices: stimuli_w_attention_list[i].choices,
-            data: { stimulus: stimuli_w_attention_list[i].stimulus, order: i + 1, version: 3 },
-            on_finish: function (data) {
-                data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
-                if (data.button_pressed == stimuli_w_attention_list[i].correct) {
-                    data.attention = true;
-                } else {
-                    data.attention = false;
-                }
-            }
-        }
-        timeline.push(attention_trial);
-        var attention_feedback = {
-            type: 'html-keyboard-response',
-            stimulus: function feedbackfunction() {
-                var last_trial_correct = jsPsych.data.get().last(1).values()[0].attention;
-                if (last_trial_correct) {
-                    return '<p> Correct! </p>'
-                } else {
-                    return '<p> Wrong! </p>'
-                }
-            },
-            trial_duration: 2000,
-            choices: jsPsych.NO_KEYS,
-        }
-        timeline.push(attention_feedback);
-    }
-};*/
-
 var fullscreen_trial_exit = {
     type: 'fullscreen',
     fullscreen_mode: false
@@ -618,11 +478,11 @@ var fullscreen_trial_exit = {
 timeline.push(fullscreen_trial_exit);
 
 /* finish connection with pavlovia.org */
-var pavlovia_finish = {
-    type: "pavlovia",
-    command: "finish"
-};
-timeline.push(pavlovia_finish);
+// var pavlovia_finish = {
+//     type: "pavlovia",
+//     command: "finish"
+// };
+// timeline.push(pavlovia_finish);
 
 
 
@@ -648,8 +508,7 @@ jsPsych.init({
         }
 
         document.body.innerHTML = '<p> Please wait. You will be redirected back to Prolific in a few moments.</p>'
+        console.log(reliability_diff_list)
         // setTimeout(function () { location.href = 'thanks.html' }, 5000)
     }
-
-
 });

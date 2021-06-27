@@ -216,8 +216,6 @@ jsPsych.plugins['audio-text-response'] = (function() {
       e.preventDefault();
 
       // measure response time
-      console.log('End');   
-      console.log(performance.now());   
       var end_trial_time = performance.now();
       var response_time = end_trial_time - start_trial_time;
 
