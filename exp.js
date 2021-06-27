@@ -352,7 +352,7 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
     var trial_start = {
         type: "html-keyboard-response",
         // stimulus: "<h1>Sound #: " + j + "</h1>",
-        stimulus: "Next clip (of " + stimuli_list.length + " in total)",
+        stimulus: "Next clip ("+j+" of " + stimuli_list.length + " in total)",
         trial_duration: 1000,
         choices: jsPsych.NO_KEYS,
     };
@@ -389,6 +389,7 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                         const diff = reliability_diff_list[stimuli_list[i].reliability]
                         if(diff[1] == -1){
                             reliability_diff_list[stimuli_list[i].reliability] = [0, effort]
+                            data.effort_reliability = reliability_diff_list[stimuli_list[i].reliability][1]
                         }
                         else{
                             reliability_diff_list[stimuli_list[i].reliability] = [effort-diff[1], effort]
@@ -508,7 +509,6 @@ jsPsych.init({
         }
 
         document.body.innerHTML = '<p> Please wait. You will be redirected back to Prolific in a few moments.</p>'
-        console.log(reliability_diff_list)
-        // setTimeout(function () { location.href = 'thanks.html' }, 5000)
+        setTimeout(function () { location.href = 'thanks.html' }, 5000)
     }
 });
