@@ -68,6 +68,7 @@ $.ajax({
     }
 });
 stimuli_list = jsPsych.randomization.repeat(stimuli_list, 1);
+console.log(stimuli_list)
 
 
 /* To get the number of 20% of the stimuli. */
