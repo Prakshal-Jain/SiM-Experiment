@@ -648,7 +648,7 @@ jsPsych.init({
         }
 
         document.body.innerHTML = '<p> Please wait. You will be redirected back to Prolific in a few moments.</p>'
-        setTimeout(function () { location.href = 'thanks.html' }, 5000)
+        // setTimeout(function () { location.href = 'thanks.html' }, 5000)
     }
 
 
