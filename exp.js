@@ -446,9 +446,6 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                 slider_name: snames[n],
                 on_finish: function (data) {
                     data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
-                },
-                on_finish: function (data) {
-                    console.log(data)
                 }
             };
             timeline.push(audio_trial);
@@ -506,6 +503,8 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                 data[snames[x]] = audio_trials[x][snames[x]];
             }
 
+            console.log(data)
+
             if (data.reliability !== "0") {//calculate distance between reliability trials and difference in intelligibility ratings
                 var reliability_trials = jsPsych.data.get().filter({ reliability: stimuli_list[i].reliability, version: 2, all: true }).values();
                 if (reliability_trials.length == 2) {
@@ -516,6 +515,7 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                     }
                 }
             }
+            console.log(data)
         }
     };
     timeline.push(trial_end);
