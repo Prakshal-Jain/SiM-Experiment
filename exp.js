@@ -114,6 +114,8 @@ for (let i = 0; i < percent20; i++) {
     }
 }
 
+console.log(stimuli_list)
+
 var attention_list = [
     { stimulus: "audio/attention/attention1_70.wav", test: false, choices: ['Who did you meet there?', 'When did you buy it?', 'What do you want?', 'Will she come?', "What's that?"], correct: 4 },
     { stimulus: "audio/attention/attention2_70.wav", test: false, choices: ["That's a good idea.", "He's a good person.", 'I have no idea what you mean.', "It's a good question.", 'Is that true?'], correct: 0 },
