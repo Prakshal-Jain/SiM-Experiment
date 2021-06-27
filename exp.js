@@ -77,9 +77,11 @@ var percent20 = Math.round(stimuli_list.length * 0.2);
 assign non-zero numbers to reliability trials;
 add to reliability list */
 var reliability_list = [];
+var track_reliability = {};
 for (let i = 0; i < percent20; i++) {
     stimuli_list[i].reliability = i + 1;
     reliability_list.push(stimuli_list[i]);
+    reliability_list[stimuli_list[i]] = -1;
 }
 
 /* Re-randomize stimuli list;
@@ -444,6 +446,9 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                 slider_name: snames[n],
                 on_finish: function (data) {
                     data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                },
+                on_finish: function (data) {
+                    console.log(data)
                 }
             };
             timeline.push(audio_trial);
