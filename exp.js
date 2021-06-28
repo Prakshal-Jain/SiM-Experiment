@@ -455,16 +455,16 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
             }
 
 
-            if (data.reliability !== "0") {//calculate distance between reliability trials and difference in intelligibility ratings
-                var reliability_trials = jsPsych.data.get().filter({ reliability: stimuli_list[i].reliability, version: 2, all: true }).values();
-                if (reliability_trials.length == 2) {
-                    data.reliability_distance = reliability_trials[1].order - reliability_trials[0].order;
-                    for (let y = 0; y < scount; y++) {
-                        var name_diff = snames[y] + '_diff';
-                        data[name_diff] = reliability_trials[1][snames[y]] - reliability_trials[0][snames[y]];
-                    }
-                }
-            }
+            // if (data.reliability !== "0") {//calculate distance between reliability trials and difference in intelligibility ratings
+            //     var reliability_trials = jsPsych.data.get().filter({ reliability: stimuli_list[i].reliability, version: 2, all: true }).values();
+            //     if (reliability_trials.length == 2) {
+            //         data.reliability_distance = reliability_trials[1].order - reliability_trials[0].order;
+            //         for (let y = 0; y < scount; y++) {
+            //             var name_diff = snames[y] + '_diff';
+            //             data[name_diff] = reliability_trials[1][snames[y]] - reliability_trials[0][snames[y]];
+            //         }
+            //     }
+            // }
         }
     };
     timeline.push(trial_end);
