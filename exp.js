@@ -391,11 +391,13 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                         if(diff[1] == -1){
                             reliability_diff_list[stimuli_list[i].reliability] = [0, effort]
                             data.effort_reliability = reliability_diff_list[stimuli_list[i].reliability][1]
+                            data.reliability_index = `${stimuli_list[i].reliability}-1`
                         }
                         else{
                             reliability_diff_list[stimuli_list[i].reliability] = [effort-diff[1], effort]
                             data.reliability_effort_difference = reliability_diff_list[stimuli_list[i].reliability][0]
                             data.effort_reliability = reliability_diff_list[stimuli_list[i].reliability][1]
+                            data.reliability_index = `${stimuli_list[i].reliability}-2`
                         }
                     }
                 }
@@ -444,7 +446,7 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
         trial_duration: 500,
         choices: jsPsych.NO_KEYS,
         data: {
-            all: true, reliability: stimuli_list[i].reliability, order: j, version: 2,
+            all: true, order: j, version: 2,
             project: stimuli_list[i].project, deviceID: stimuli_list[i].deviceID, audioID: stimuli_list[i].audioID, sentenceID: stimuli_list[i].sentenceID
         },
         on_finish: function (data) {
