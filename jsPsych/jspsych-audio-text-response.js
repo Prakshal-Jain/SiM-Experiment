@@ -33,7 +33,12 @@ jsPsych.plugins['audio-text-response'] = (function() {
         default: true,
         description: 'If true, the participant will be able to replay.'
       },
-
+      replay_count: {
+        type: jsPsych.plugins.parameterType.INT,
+        pretty_name: 'Max replay count',
+        default: 1,
+        description: 'The maimum number of time stimuli can be replayed.'
+      },
       autoplay: {
         type: jsPsych.plugins.parameterType.BOOL,
         pretty_name: 'Autoplay',
@@ -180,32 +185,40 @@ jsPsych.plugins['audio-text-response'] = (function() {
       };
 
     if (trial.replay == true) {
+      display_element.innerHTML = html+"<br><div id='show_message'></div>"
       display_element.querySelector('#jspsych-audio-text-response-replay').addEventListener('click', function () {
-        display_element.querySelector('#jspsych-audio-text-response-replay').disabled = true;
-        display_element.querySelector('#jspsych-survey-text-next').disabled = true;
-        if (context !== null) {
-          source = context.createBufferSource();
-          source.buffer = jsPsych.pluginAPI.getAudioBuffer(trial.stimulus);
-          source.connect(context.destination);
-          source.start();
-          source.onended = function () {
-            display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
-            // if (movements.includes(true) == false) {
-              display_element.querySelector('#jspsych-survey-text-next').disabled = false;
-            // }
+        if(replay_time < trial.replay_count){
+          display_element.querySelector('#jspsych-audio-text-response-replay').disabled = true;
+          display_element.querySelector('#jspsych-survey-text-next').disabled = true;
+          if (context !== null) {
+            source = context.createBufferSource();
+            source.buffer = jsPsych.pluginAPI.getAudioBuffer(trial.stimulus);
+            source.connect(context.destination);
+            source.start();
+            source.onended = function () {
+              display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
+              // if (movements.includes(true) == false) {
+                display_element.querySelector('#jspsych-survey-text-next').disabled = false;
+              // }
+            }
           }
+          else {
+            audio.currentTime = 0;
+            audio.play();
+            audio.addEventListener('ended', function () {
+              display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
+              // if (movements.includes(true) == false) {
+                display_element.querySelector('#jspsych-survey-text-next').disabled = false;
+              // }
+            })
+          }
+          replay_time += 1;
+          document.getElementById("show_message").innerHTML = `Replay ${replay_time} of ${trial.replay_count}`
         }
-        else {
-          audio.currentTime = 0;
-          audio.play();
-          audio.addEventListener('ended', function () {
-            display_element.querySelector('#jspsych-audio-text-response-replay').disabled = false;
-            // if (movements.includes(true) == false) {
-              display_element.querySelector('#jspsych-survey-text-next').disabled = false;
-            // }
-          })
+        else{
+          display_element.querySelector('#jspsych-audio-text-response-replay').disabled = true;
+          document.getElementById("show_message").innerHTML = `Maximum replay limit (${trial.replay_count}) reached. Please click continue to proceed.`
         }
-        replay_time += 1;
       })
     };
 

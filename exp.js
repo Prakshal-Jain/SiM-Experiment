@@ -375,6 +375,7 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                 type: 'audio-slider-response',
                 stimulus: stimuli_list[i].stimulus,
                 replay: true,
+                replay_count: settings.replay_count,
                 autoplay: true,
                 //require_movement: true,
                 labels: slabels[0],
@@ -407,6 +408,7 @@ for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
                 type: 'audio-text-response',
                 stimulus: stimuli_list[i].stimulus,
                 replay: true,
+                replay_count: settings.replay_count,
                 autoplay: true,
                 //require_movement: true,
                   questions: [
