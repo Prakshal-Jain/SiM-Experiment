@@ -234,7 +234,7 @@ jsPsych.plugins['audio-slider-response'] = (function () {
           document.getElementById("show_message").innerHTML = `Replay ${replay_time} of ${trial.replay_count}`
         }
         else{
-          display_element.querySelector('#jspsych-audio-slider-response-replay').disabled = false;
+          display_element.querySelector('#jspsych-audio-slider-response-replay').disabled = true;
           document.getElementById("show_message").innerHTML = `Maximum replay limit (${trial.replay_count}) reached. Please click continue to proceed.`
         }
       })
