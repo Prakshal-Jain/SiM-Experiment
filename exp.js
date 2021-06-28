@@ -151,11 +151,11 @@ var check_consent = function (elem) {
 var timeline = [];
 
 /* init connection with pavlovia.org */
-var pavlovia_init = {
-    type: "pavlovia",
-    command: "init"
-};
-timeline.push(pavlovia_init);
+// var pavlovia_init = {
+//     type: "pavlovia",
+//     command: "init"
+// };
+// timeline.push(pavlovia_init);
 
 /* generate a random subject ID with 16 characters */
 //var participant_id = jsPsych.randomization.randomID(16);
@@ -479,11 +479,11 @@ var fullscreen_trial_exit = {
 timeline.push(fullscreen_trial_exit);
 
 /* finish connection with pavlovia.org */
-var pavlovia_finish = {
-    type: "pavlovia",
-    command: "finish"
-};
-timeline.push(pavlovia_finish);
+// var pavlovia_finish = {
+//     type: "pavlovia",
+//     command: "finish"
+// };
+// timeline.push(pavlovia_finish);
 
 
 
