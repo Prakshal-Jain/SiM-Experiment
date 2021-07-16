@@ -1,0 +1,17 @@
+[
+  {
+    "stimulus": "./audio/attention/attention1_70.wav"
+  },
+  {
+    "stimulus": "./audio/attention/attention3_70.wav"
+  },
+  {
+    "stimulus": "./audio/attention/check2_70.wav"
+  },
+  {
+    "stimulus": "./audio/attention/attention2_70.wav"
+  },
+  {
+    "stimulus": "./audio/attention/check1_70.wav"
+  }
+]

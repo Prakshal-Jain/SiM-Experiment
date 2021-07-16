@@ -32,6 +32,19 @@ if (checkiPad == "iPad" || String(browser.tablet) !== "undefined" || String(brow
         "file_count": <number of psudorandom files to consider>
     }
 */
+
+var practice_block = [];
+$.ajax({
+    url: "practice_block.json",
+    async: false,
+    dataType: 'json',
+    success: function (data) {
+        practice_block = data
+    }
+});
+
+
+
 settings = {}
 $.ajax({
     url: "settings.json",
@@ -124,8 +137,6 @@ for (let i = 0; i < attention_list.length; i++) {
     var insert_index = getRandomInt(0, stimuli_w_attention_list.length);
     stimuli_w_attention_list.splice(insert_index, 0, attention_list[i]);
 }
-//var stimuli_w_attention_list = stimuli_list.concat(attention_list);
-//stimuli_w_attention_list = jsPsych.randomization.repeat(stimuli_w_attention_list, 1);
 
 var check_list = [
     { stimulus: "audio/attention/check1_70.wav", choices: ['Tell me the truth.', 'I agree with you.', 'Show me an example.', 'Tell me a joke.', 'Please come in.'], correct: 3 },
@@ -327,10 +338,119 @@ var fullscreen_trial = {
 };
 timeline.push(fullscreen_trial);
 
+
+var scount = 2;
+var slabels = [['Very easy to understand', 'Very difficult to understand']];
+var sprompts = ['what the speaker is saying and type exactly what you hear', 'the effort required to understand what the speaker is saying'];
+var snames = ['Transcription', 'Effort'];
+
+
+// ================ practice Block =================
+var practice_instruction = {
+    type: 'instructions',
+    pages: [
+        `This is a practice block consisting of ${practice_block.length} recordings. Please feel free to practice here before starting the actual experiment.`,
+    ],
+    button_label_next: 'Continue',
+    show_clickable_nav: true
+}
+timeline.push(practice_instruction);
+
+for (let i = 0; i < practice_block.length; i++) {//loop through the silmuli list
+    var j = i + 1;
+    var trial_start = {
+        type: "html-keyboard-response",
+        stimulus: "Next clip ("+j+" of " + practice_block.length + " in total)",
+        trial_duration: 1000,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(trial_start);
+    
+    for (let n = 0; n < scount; n++) {//loop through the silders
+        var focus = {
+            type: "html-keyboard-response",
+            stimulus: "<h2> </h2>" + '<p><font size="6">Please focus on <b></p><p>' + sprompts[n] + ".</p><p></b> </font></p>",
+            trial_duration: 1800,
+            choices: jsPsych.NO_KEYS,
+        }
+        timeline.push(focus);
+    
+            // For every part, first section will be transcription, and second will be Effort scale.
+            if(n % 2 == 1){
+                var audio_trial = {
+                    type: 'audio-slider-response',
+                    stimulus: practice_block[i].stimulus,
+                    replay: true,
+                    replay_count: settings.replay_count,
+                    autoplay: true,
+                    //require_movement: true,
+                    labels: slabels[0],
+                    slider_width: 500,
+                    prompt: snames[n],
+                    preamble: '<p>Please use the scale below to indicate <b>' + sprompts[n] + '.</b></p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please only use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + practice_block.length + '</p>',
+                    slider_name: snames[n],
+                    on_finish: function (data) {
+                        data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                        const effort = parseInt(data.Effort)
+                        if('reliability' in practice_block[i]){
+                            const diff = reliability_diff_list[practice_block[i].reliability]
+                            if(diff[1] == -1){
+                                reliability_diff_list[practice_block[i].reliability] = [0, effort]
+                                data.effort_reliability = reliability_diff_list[practice_block[i].reliability][1]
+                                data.reliability_index = `${practice_block[i].reliability}-1`
+                            }
+                            else{
+                                reliability_diff_list[practice_block[i].reliability] = [effort-diff[1], effort]
+                                data.reliability_effort_difference = reliability_diff_list[practice_block[i].reliability][0]
+                                data.effort_reliability = reliability_diff_list[practice_block[i].reliability][1]
+                                data.reliability_index = `${practice_block[i].reliability}-2`
+                            }
+                        }
+                    }
+                };
+                timeline.push(audio_trial);
+            }
+            // For Odd counts (Transcription), we display audio-text-response.
+            else if(n % 2 == 0){
+                var text_response = {
+                    type: 'audio-text-response',
+                    stimulus: practice_block[i].stimulus,
+                    replay: true,
+                    replay_count: settings.replay_count,
+                    autoplay: true,
+                    //require_movement: true,
+                      questions: [
+                            {
+                                prompt: "", 
+                                name: snames[n],
+                                placeholder: "Transcribe the audio file here",
+                                required: true,
+                                rows: 5, 
+                                columns: 40
+                            }, 
+                        ],
+                    preamble: '<p>Please type exactly what you heard the speaker say. If you are unsure, just type what you think you heard. If you have no idea, just type NA.</p>' + '<p>Remember: <br>- Please do NOT adjust your volume <br>- Please ONLY use the Replay button if there was a distraction or loud noise that made it impossible to hear the audio clip.</p><p>Trial #: ' + j + ' of ' + practice_block.length + '</p>',
+                    // on_load: function() {
+                    //     const sound = new Audio()
+                    //     sound.src = stimuli_list[i].stimulus
+                    //     sound.play()
+                    // },
+                    on_finish: function (data) {
+                        data.window_resolution = window.innerWidth + ' x ' + window.innerHeight;
+                    }
+                };
+                timeline.push(text_response);
+            }
+    
+        }
+    }
+
+
 /*instructions*/
 var instruction = {
     type: 'instructions',
     pages: [
+        '<strong>Initiating actual experiment...</strong>',
         'Welcome to the experiment. Please listen to the speech presented to you in the following task. Sometimes there will be background noise. Your task is to: <br> 1) Type out exactly what you heard the speaker say. Type you exactly what you heard, even if you are not completely sure you are correct. If you have no idea, you can type NA. <br> 2) Rate how much effort it took to understand the speech. <br><br>Once you have begun the experiment, please <strong>DO NOT ADJUST YOUR VOLUME FURTHER.</strong>',
         'While you do have the option to replay each sentence, we ask that you <strong>DO NOT PRESS REPLAY</strong> unless something happens that has made it difficult for you to hear the item (for example, if there is a loud, unexpected sound in your environment).',
         "The experiment is self-paced. Please complete it in one sitting. It is expected to take approximately ten minutes. Click 'Continue' to start the experiment."
@@ -340,11 +460,6 @@ var instruction = {
 }
 timeline.push(instruction);
 
-
-var scount = 2;
-var slabels = [['Very easy to understand', 'Very difficult to understand']];
-var sprompts = ['what the speaker is saying and type exactly what you hear', 'the effort required to understand what the speaker is saying'];
-var snames = ['Transcription', 'Effort'];
 
 for (let i = 0; i < stimuli_list.length; i++) {//loop through the silmuli list
 //for (let i = 0; i < 5; i++) {//loop through the silmuli list

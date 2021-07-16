@@ -6,9 +6,10 @@ from os import listdir
 from os.path import isfile, join
 import json
 
-def generateJSON(path):
+def generateJSON(path, output):
     onlyfiles = [{"stimulus": path+"/"+f} for f in listdir(path) if isfile(join(path, f))]
-    with open('stimuli.json', 'w') as outfile:
+    with open(output, 'w') as outfile:
         json.dump(onlyfiles, outfile, indent=2)
 
-generateJSON("./audio")
+generateJSON("./audio", 'stimuli.json')
+# generateJSON("./audio/attention", 'practice_block.json')
