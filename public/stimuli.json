@@ -1,0 +1,1408 @@
+[
+  {
+    "playlist_directory": "playlist_01_babble0_MA",
+    "path": "./audio/mask-recordings/playlist_01_babble0_MA",
+    "playlist": 1,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_SM_babble0_MA02_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_KN_babble0_MA03_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_NM_babble0_MA01_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_N95_babble0_MA04_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_DM_babble0_MA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_01_babble0_MA/sim_CM_babble0_MA05_01.wav"
+      }
+    ]
+  },
+  {
+    "playlist_directory": "playlist_02_babble5_MA",
+    "path": "./audio/mask-recordings/playlist_02_babble5_MA",
+    "playlist": 2,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_CM_babble5_MA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_N95_babble5_MA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_NM_babble5_MA02_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_DM_babble5_MA01_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_KN_babble5_MA04_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_02_babble5_MA/sim_SM_babble5_MA03_03.wav"
+      }
+    ]
+  },
+  {
+    "playlist_directory": "playlist_03_babble0_FA",
+    "path": "./audio/mask-recordings/playlist_03_babble0_FA",
+    "playlist": 3,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_N95_babble0_FA02_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_CM_babble0_FA03_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_NM_babble0_FA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_KN_babble0_FA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_SM_babble0_FA06_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_03_babble0_FA/sim_DM_babble0_FA04_01.wav"
+      }
+    ]
+  },
+  {
+    "playlist_directory": "playlist_04_babble5_FA",
+    "path": "./audio/mask-recordings/playlist_04_babble5_FA",
+    "playlist": 4,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_DM_babble5_FA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_CM_babble5_FA04_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_KN_babble5_FA02_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_N95_babble5_FA03_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_NM_babble5_FA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_04_babble5_FA/sim_SM_babble5_FA01_02.wav"
+      }
+    ]
+  },
+  {
+    "playlist_directory": "playlist_05_babble0_MA",
+    "path": "./audio/mask-recordings/playlist_05_babble0_MA",
+    "playlist": 5,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_CM_babble0_MA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_N95_babble0_MA05_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_NM_babble0_MA02_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_KN_babble0_MA04_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_SM_babble0_MA03_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_05_babble0_MA/sim_DM_babble0_MA01_09.wav"
+      }
+    ]
+  },
+  {
+    "playlist_directory": "playlist_06_babble5_MA",
+    "path": "./audio/mask-recordings/playlist_06_babble5_MA",
+    "playlist": 6,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_KN_babble5_MA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_DM_babble5_MA02_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_NM_FS_babble5_MA03_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_CM_babble5_MA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_SM_FS_babble5_MA04_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_06_babble5_MA/sim_N95_babble5_MA06_08.wav"
+      }
+    ]
+  },
+  {
+    "playlist_directory": "playlist_07_babble0_FA",
+    "path": "./audio/mask-recordings/playlist_07_babble0_FA",
+    "playlist": 7,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_NM_babble0_FA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_KN_babble0_FA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_07_babble0_FA/sim_SM_babble0_FA06_08.wav"
+      }
+    ]
+  },
+  {
+    "playlist_directory": "playlist_08_babble5_FA",
+    "path": "./audio/mask-recordings/playlist_08_babble5_FA",
+    "playlist": 8,
+    "recordings": [
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_DM_babble5_FA05_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_09.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_CM_babble5_FA04_08.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_KN_babble5_FA02_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_06.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_07.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_05.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_04.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_10.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_01.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_N95_babble5_FA03_03.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_NM_babble5_FA06_02.wav"
+      },
+      {
+        "stimulus": "./audio/mask-recordings/playlist_08_babble5_FA/sim_SM_babble5_FA01_02.wav"
+      }
+    ]
+  }
+]

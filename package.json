@@ -1,0 +1,23 @@
+{
+  "name": "simsim-experiment",
+  "version": "1.0.0",
+  "description": "UB SimSim Experiment",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Prakshal/simsim-experiment.git"
+  },
+  "author": "Prakshal Jain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/Prakshal/simsim-experiment/issues"
+  },
+  "homepage": "https://gitlab.com/Prakshal/simsim-experiment#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
