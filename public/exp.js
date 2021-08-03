@@ -66,6 +66,7 @@ function httpGetAsync(theUrl, callback)
 
 var playlist = 0
 httpGetAsync('/sended', (data) => {playlist = (data-1)})
+console.log(playlist)
 
 /* Get stimuli from stimuli.json created by files_to_json.py */
 var stimuli_list = [];
